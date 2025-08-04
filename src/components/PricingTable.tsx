@@ -37,6 +37,14 @@ const PricingTable = () => {
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 max-w-3xl mx-auto">
           {/* Monthly Plan */}
           <div className="flex-1 bg-[#1d2233] rounded-xl p-4 md:p-6 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group">
+            {/* Discount Badge */}
+            <div className="absolute -top-1 -right-1 z-10">
+              <div className="bg-[#ffe066] text-[#15192c] px-2 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
+                <Gift className="w-3 h-3" />
+                <span>83% OFF</span>
+              </div>
+            </div>
+
             <div className="text-center mb-4">
               <div className="w-10 h-10 bg-[#00e676]/20 rounded-xl flex items-center justify-center mx-auto mb-3">
                 <Star className="w-5 h-5 text-[#00e676]" strokeWidth={2} />
