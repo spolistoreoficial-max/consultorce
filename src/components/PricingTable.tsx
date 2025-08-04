@@ -112,8 +112,9 @@ const PricingTable = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-3 lg:gap-6 max-w-3xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 max-w-4xl mx-auto">
           {/* Monthly Plan */}
-          <div className="flex-1 bg-[#1d2233] rounded-xl p-3 md:p-6 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative">
+          <div className="flex-1 bg-[#1d2233] rounded-2xl p-4 md:p-8 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative">
             {/* Discount Badge */}
             <div className="absolute -top-1 -right-1 z-10">
               <div className="bg-[#ffe066] text-[#15192c] px-2 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
@@ -140,12 +141,13 @@ const PricingTable = () => {
             </div>
 
             <div className="space-y-1.5 md:space-y-2 mb-3 md:mb-4">
+            <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
               {monthlyFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="w-3.5 h-3.5 md:w-4 md:h-4 bg-[#00e676] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-2 h-2 md:w-2.5 md:h-2.5 text-[#15192c]" strokeWidth={3} />
+                  <div className="w-4 h-4 md:w-5 md:h-5 bg-[#00e676] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-2.5 h-2.5 md:w-3 md:h-3 text-[#15192c]" strokeWidth={3} />
                   </div>
-                  <span className="text-[#f3f3f8] text-xs md:text-sm font-semibold leading-tight">{feature}</span>
+                  <span className="text-[#f3f3f8] text-sm md:text-base font-semibold leading-relaxed">{feature}</span>
                 </div>
               ))}
             </div>
@@ -163,12 +165,12 @@ const PricingTable = () => {
           </div>
 
           {/* Annual Plan - Most Popular */}
-          <div className="flex-1 bg-gradient-to-br from-[#00e676] to-[#21a1ff] rounded-xl p-3 md:p-6 hover:shadow-xl transition-all duration-500 relative transform hover:scale-105 shadow-xl">
+          <div className="flex-1 bg-gradient-to-br from-[#00e676] to-[#21a1ff] rounded-2xl p-4 md:p-8 hover:shadow-xl transition-all duration-500 relative transform hover:scale-105 shadow-xl">
             {/* Popular Badge */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <div className="bg-[#ffe066] text-[#15192c] px-2 md:px-3 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
                 <Star className="w-2.5 h-2.5 md:w-3 md:h-3 fill-current" />
-                <span>MAIS POPULAR</span>
+                <span>ECONOMIZE 4 MESES</span>
               </div>
             </div>
 
@@ -198,18 +200,15 @@ const PricingTable = () => {
               <div className="text-white/90 font-bold text-xs bg-white/20 rounded-full px-2 py-1 inline-block backdrop-blur-sm mb-1">
                 Apenas R$ 40,20/mês
               </div>
-              <div className="text-[#ffe066] font-bold text-xs bg-[#ffe066]/20 rounded-full px-2 py-1 inline-block backdrop-blur-sm">
-                💰 Economize 4 meses
-              </div>
             </div>
 
-            <div className="space-y-1.5 md:space-y-2 mb-3 md:mb-4">
+            <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
               {annualFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="w-3.5 h-3.5 md:w-4 md:h-4 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Check className="w-2 h-2 md:w-2.5 md:h-2.5 text-[#00e676]" strokeWidth={3} />
+                  <div className="w-4 h-4 md:w-5 md:h-5 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Check className="w-2.5 h-2.5 md:w-3 md:h-3 text-[#00e676]" strokeWidth={3} />
                   </div>
-                  <span className="text-white text-xs md:text-sm font-semibold leading-tight">{feature}</span>
+                  <span className="text-white text-sm md:text-base font-semibold leading-relaxed">{feature}</span>
                 </div>
               ))}
             </div>
