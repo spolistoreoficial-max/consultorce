@@ -36,9 +36,9 @@ const PricingTable = () => {
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 max-w-3xl mx-auto">
           {/* Monthly Plan */}
-          <div className="flex-1 bg-[#20263a] rounded-xl p-4 md:p-6 border-2 border-gray-600/40 hover:border-[#00e676]/60 transition-all duration-500 relative shadow-xl hover:shadow-[#00e676]/20">
+          <div className="flex-1 bg-gradient-to-br from-[#1e2a42] to-[#252f48] rounded-xl p-4 md:p-6 border-2 border-[#00e676]/30 hover:border-[#00e676]/70 transition-all duration-500 relative shadow-xl hover:shadow-[#00e676]/25 hover:transform hover:scale-[1.02]">
             <div className="text-center mb-4">
-              <div className="w-10 h-10 bg-[#00e676]/20 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#00e676]/25 to-[#00e676]/35 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg border border-[#00e676]/20">
                 <Star className="w-5 h-5 text-[#00e676]" strokeWidth={2} />
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#f3f3f8]">Plano Mensal</h3>
