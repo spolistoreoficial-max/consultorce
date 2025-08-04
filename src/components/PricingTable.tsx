@@ -175,14 +175,6 @@ const PricingTable = () => {
               </div>
             </div>
 
-            {/* Discount Badge */}
-            <div className="absolute -top-1 -right-1 z-10">
-              <div className="bg-[#ffe066] text-[#15192c] px-2 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
-                <Gift className="w-2.5 h-2.5 md:w-3 md:h-3" />
-                <span>90% OFF</span>
-              </div>
-            </div>
-
             <div className="text-center mb-3 md:mb-4 mt-4">
               <div className="w-8 h-8 md:w-10 md:h-10 bg-white/25 rounded-xl flex items-center justify-center mx-auto mb-2 md:mb-3 shadow-lg backdrop-blur-sm">
                 <Crown className="w-4 h-4 md:w-5 md:h-5 text-white" strokeWidth={2} />
