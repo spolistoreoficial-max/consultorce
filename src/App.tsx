@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Differentials from './components/Differentials';
 import WhatsAppRoll from './components/WhatsAppRoll';
@@ -10,6 +11,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#15192c] via-[#1a1f35] to-[#232e47] text-[#f3f3f8]">
+      <Navbar />
       <HeroSection />
       <Differentials />
       <WhatsAppRoll />
