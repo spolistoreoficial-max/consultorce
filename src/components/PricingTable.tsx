@@ -128,7 +128,6 @@ const PricingTable = () => {
                 <Star className="w-4 h-4 md:w-5 md:h-5 text-[#00e676]" strokeWidth={2} />
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-[#00e676]">Plano Mensal</h3>
-              <h3 className="text-xl md:text-3xl font-bold mb-1 md:mb-2 text-[#00e676]">Plano Mensal</h3>
             </div>
 
             <div className="text-center mb-3 md:mb-4">
@@ -189,7 +188,6 @@ const PricingTable = () => {
                 <Crown className="w-4 h-4 md:w-5 md:h-5 text-white" strokeWidth={2} />
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-white">Plano Anual</h3>
-              <h3 className="text-xl md:text-3xl font-bold mb-1 md:mb-2 text-white">Plano Anual</h3>
             </div>
 
             <div className="text-center mb-3 md:mb-4">
