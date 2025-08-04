@@ -36,7 +36,7 @@ const PricingTable = () => {
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 max-w-3xl mx-auto">
           {/* Monthly Plan */}
-          <div className="flex-1 bg-gradient-to-br from-[#ff4500] to-[#ff6b35] rounded-xl p-4 md:p-6 border-2 border-[#ff4500]/40 hover:border-[#ff4500]/80 transition-all duration-500 relative shadow-xl hover:shadow-[#ff4500]/30 hover:transform hover:scale-[1.02]">
+          <div className="flex-1 bg-gradient-to-br from-[#21a1ff] to-[#ffe066] rounded-xl p-4 md:p-6 border-2 border-[#21a1ff]/40 hover:border-[#21a1ff]/80 transition-all duration-500 relative shadow-xl hover:shadow-[#21a1ff]/30 hover:transform hover:scale-[1.02]">
             <div className="text-center mb-4">
               <div className="w-10 h-10 bg-white/25 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg backdrop-blur-sm">
                 <Star className="w-5 h-5 text-white" strokeWidth={2} />
@@ -58,7 +58,7 @@ const PricingTable = () => {
               {monthlyFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Check className="w-2.5 h-2.5 text-[#ff4500]" strokeWidth={3} />
+                    <Check className="w-2.5 h-2.5 text-[#21a1ff]" strokeWidth={3} />
                   </div>
                   <span className="text-white text-xs md:text-sm font-semibold">{feature}</span>
                 </div>
