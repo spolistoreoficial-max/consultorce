@@ -112,7 +112,7 @@ const PricingTable = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-3 lg:gap-6 max-w-3xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-5xl mx-auto">
           {/* Monthly Plan */}
           <div className="flex-1 bg-[#1d2233] rounded-2xl p-4 md:p-8 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative">
             {/* Discount Badge */}
@@ -128,6 +128,7 @@ const PricingTable = () => {
                 <Star className="w-4 h-4 md:w-5 md:h-5 text-[#00e676]" strokeWidth={2} />
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-[#00e676]">Plano Mensal</h3>
+              <h3 className="text-xl md:text-3xl font-bold mb-1 md:mb-2 text-[#00e676]">Plano Mensal</h3>
             </div>
 
             <div className="text-center mb-3 md:mb-4">
@@ -188,6 +189,7 @@ const PricingTable = () => {
                 <Crown className="w-4 h-4 md:w-5 md:h-5 text-white" strokeWidth={2} />
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-white">Plano Anual</h3>
+              <h3 className="text-xl md:text-3xl font-bold mb-1 md:mb-2 text-white">Plano Anual</h3>
             </div>
 
             <div className="text-center mb-3 md:mb-4">
