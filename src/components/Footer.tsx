@@ -95,15 +95,6 @@ const Footer = () => {
       >
         <MessageCircle className="w-8 h-8 text-white" />
       </a>
-
-      {/* Back to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-6 left-6 w-12 h-12 bg-[#1d2233] hover:bg-[#232938] border border-[#00e676]/30 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 z-50"
-        aria-label="Voltar ao topo"
-      >
-        <div className="w-0 h-0 border-l-4 border-r-4 border-b-6 border-l-transparent border-r-transparent border-b-[#00e676]"></div>
-      </button>
     </>
   );
 };
