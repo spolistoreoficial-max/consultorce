@@ -151,6 +151,7 @@ const PricingTable = () => {
                 </div>
               ))}
             </div>
+            </div>
 
             <button
               onClick={() => handleBuyClick('https://pay.kiwify.com.br/bReuhAT')}
@@ -224,6 +225,7 @@ const PricingTable = () => {
               🟢 7 dias de garantia. Experimente sem risco!
             </p>
           </div>
+        </div>
         </div>
 
         <div className="text-center mt-4 md:mt-6 px-2">
