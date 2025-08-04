@@ -51,7 +51,7 @@ const Differentials = () => {
             Por que <span className="text-[#00e676]">Orion</span> é diferente?
           </h2>
           <p className="text-xl text-[#a0aec0] max-w-2xl mx-auto">
-            Uma IA especializada em proteção veicular que realmente entende seu negócio
+            Uma IA especializada em <span className="text-[#21a1ff]">proteção veicular</span> que realmente entende seu negócio
           </p>
         </div>
 
