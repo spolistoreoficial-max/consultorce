@@ -46,7 +46,7 @@ const PricingTable = () => {
 
             <div className="text-center mb-4">
               <div className="mb-2">
-                <span className="text-sm text-[#a0aec0] line-through font-medium">De R$ 397,00</span>
+                <span className="text-sm text-red-500 line-through font-medium">De R$ 397,00</span>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-[#f3f3f8] mb-1">
                 R$ 67,00
@@ -104,7 +104,7 @@ const PricingTable = () => {
 
             <div className="text-center mb-4">
               <div className="mb-2">
-                <span className="text-sm text-white/80 line-through font-medium">De R$ 4.764,00</span>
+                <span className="text-sm text-red-400 line-through font-medium">De R$ 4.764,00</span>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                 R$ 482,40
