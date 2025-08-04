@@ -225,7 +225,7 @@ const PricingTable = () => {
         </div>
         </div>
 
-        <div className="text-center mt-4 md:mt-6 px-2">
+        <div className="text-center mt-8 md:mt-12 px-2">
           <p className="text-sm md:text-base text-[#a0aec0] mb-2 md:mb-3 font-medium">
             🔒 <strong className="text-[#00e676]">Pagamento 100% seguro</strong> via Kiwify
           </p>
