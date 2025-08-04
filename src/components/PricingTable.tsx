@@ -103,7 +103,6 @@ const PricingTable = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-4 md:mb-8">
           <UrgencyTimer />
-          <ViewerCounter />
           <h2 className="text-xl md:text-3xl font-bold mb-2 md:mb-3 leading-tight px-2">
             Escolha seu <span className="text-[#00e676]">plano</span>
           </h2>
@@ -236,6 +235,9 @@ const PricingTable = () => {
             Aceitamos PIX e cartão de crédito
           </p>
         </div>
+
+        {/* Floating Viewer Counter */}
+        <ViewerCounter />
       </div>
     </section>
   );
