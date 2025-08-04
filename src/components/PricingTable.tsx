@@ -36,43 +36,43 @@ const PricingTable = () => {
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 max-w-3xl mx-auto">
           {/* Monthly Plan */}
-          <div className="flex-1 bg-gradient-to-br from-[#1e2a42] to-[#252f48] rounded-xl p-4 md:p-6 border-2 border-[#00e676]/30 hover:border-[#00e676]/70 transition-all duration-500 relative shadow-xl hover:shadow-[#00e676]/25 hover:transform hover:scale-[1.02]">
+          <div className="flex-1 bg-gradient-to-br from-[#ff4500] to-[#ff6b35] rounded-xl p-4 md:p-6 border-2 border-[#ff4500]/40 hover:border-[#ff4500]/80 transition-all duration-500 relative shadow-xl hover:shadow-[#ff4500]/30 hover:transform hover:scale-[1.02]">
             <div className="text-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#00e676]/25 to-[#00e676]/35 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg border border-[#00e676]/20">
-                <Star className="w-5 h-5 text-[#00e676]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-white/25 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg backdrop-blur-sm">
+                <Star className="w-5 h-5 text-white" strokeWidth={2} />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#f3f3f8]">Plano Mensal</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">Plano Mensal</h3>
             </div>
 
             <div className="text-center mb-4">
               <div className="mb-2">
-                <span className="text-sm text-[#a0aec0] line-through font-medium">De R$ 397,00</span>
+                <span className="text-sm text-white/80 line-through font-medium">De R$ 397,00</span>
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-[#f3f3f8] mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                 R$ 67,00
               </div>
-              <div className="text-sm text-[#a0aec0] font-medium">/mês</div>
+              <div className="text-sm text-white/90 font-medium">/mês</div>
             </div>
 
             <div className="space-y-2 mb-4">
               {monthlyFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="w-4 h-4 bg-[#00e676] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Check className="w-2.5 h-2.5 text-[#15192c]" strokeWidth={3} />
+                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Check className="w-2.5 h-2.5 text-[#ff4500]" strokeWidth={3} />
                   </div>
-                  <span className="text-[#f3f3f8] text-xs md:text-sm font-medium">{feature}</span>
+                  <span className="text-white text-xs md:text-sm font-semibold">{feature}</span>
                 </div>
               ))}
             </div>
 
             <button
               onClick={() => handleBuyClick('https://pay.kiwify.com.br/bReuhAT')}
-              className="w-full bg-[#00e676] hover:bg-[#00d665] text-[#15192c] py-2.5 md:py-3 rounded-xl font-bold text-base md:text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl shadow-lg"
+              className="w-full bg-[#1d2233] hover:bg-[#15192c] text-white py-2.5 md:py-3 rounded-xl font-bold text-base md:text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl shadow-lg"
             >
               Assinar Agora 🚀
             </button>
 
-            <p className="text-center text-xs text-[#a0aec0] mt-3 font-medium">
+            <p className="text-center text-xs text-white/90 mt-3 font-medium">
               🟢 7 dias de garantia. Experimente sem risco!
             </p>
           </div>
