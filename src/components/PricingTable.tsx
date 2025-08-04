@@ -236,8 +236,6 @@ const PricingTable = () => {
           </p>
         </div>
 
-        {/* Floating Viewer Counter */}
-        <ViewerCounter />
       </div>
     </section>
   );
