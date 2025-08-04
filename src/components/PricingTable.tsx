@@ -99,7 +99,7 @@ const PricingTable = () => {
             <div className="absolute -top-1 -right-1 z-10">
               <div className="bg-[#ffe066] text-[#15192c] px-2 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
                 <Gift className="w-3 h-3" />
-                <span>33% OFF</span>
+                <span>90% OFF</span>
               </div>
             </div>
 
@@ -120,6 +120,9 @@ const PricingTable = () => {
               <div className="text-sm text-white/90 font-medium mb-1">/ano</div>
               <div className="text-white/90 font-bold text-xs bg-white/20 rounded-full px-2 py-1 inline-block backdrop-blur-sm">
                 Apenas R$ 40,20/mês
+              </div>
+              <div className="text-[#ffe066] font-bold text-xs bg-[#ffe066]/20 rounded-full px-2 py-1 inline-block backdrop-blur-sm mt-1">
+                💰 Economize 4 meses
               </div>
             </div>
 
