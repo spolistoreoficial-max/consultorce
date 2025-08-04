@@ -103,7 +103,7 @@ const PricingTable = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-4 md:mb-8">
           <UrgencyTimer />
-          <h2 className="text-xl md:text-3xl font-bold mb-2 md:mb-3 leading-tight px-2">
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-3 leading-tight px-2">
             Escolha seu <span className="text-[#00e676]">plano</span>
           </h2>
           <p className="text-sm md:text-lg text-[#a0aec0] max-w-2xl mx-auto leading-relaxed px-2">
