@@ -34,7 +34,7 @@ const HeroSection = () => {
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           <span className="text-[#00e676]">Orion:</span> O Consultor Expert que te ajuda a 
-          <span className="block text-[#21a1ff] mt-2">fechar mais vendas,</span>
+          <span className="block text-[#21a1ff] mt-2">fechar mais vendas</span>
           <span className="block text-[#ffe066] mt-2">24 horas por dia.</span>
         </h1>
 
