@@ -144,7 +144,7 @@ const PricingTable = () => {
             🔒 <strong className="text-[#00e676]">Pagamento 100% seguro</strong> via Kiwify
           </p>
           <p className="text-sm text-[#a0aec0]">
-            Aceitamos PIX, cartão de crédito e boleto bancário
+            Aceitamos PIX e cartão de crédito
           </p>
         </div>
       </div>
