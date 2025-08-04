@@ -27,7 +27,7 @@ const UrgencyTimer = () => {
   }, []);
 
   return (
-    <div className="bg-red-500 text-white px-3 py-2 rounded-lg text-center mb-4 animate-pulse">
+    <div className="bg-red-500 text-white px-3 py-3 text-center mb-8 animate-pulse w-full">
       <div className="flex items-center justify-center space-x-2 mb-1">
         <Clock className="w-4 h-4" />
         <span className="font-bold text-sm">OFERTA EXPIRA EM:</span>
@@ -99,10 +99,15 @@ const PricingTable = () => {
   };
 
   return (
-    <section id="pricing" className="py-6 md:py-12 px-3 md:px-4">
+    <section id="pricing" className="py-6 md:py-12">
+      {/* Full-width Urgency Timer */}
+      <div className="w-full">
+        <UrgencyTimer />
+      </div>
+      
+      <div className="px-3 md:px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-4 md:mb-8">
-          <UrgencyTimer />
           <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-3 leading-tight px-2">
             Escolha seu <span className="text-[#00e676]">plano</span>
           </h2>
@@ -229,6 +234,7 @@ const PricingTable = () => {
           </p>
         </div>
 
+      </div>
       </div>
     </section>
   );
