@@ -24,7 +24,7 @@ const Differentials = () => {
     {
       icon: BarChart3,
       title: "Rotina de acompanhamento e cálculos prontos",
-      description: "Organize sua agenda, faça follow-ups automáticos e tenha cálculos de proteção sempre à mão.",
+      description: "Organize sua agenda, crie planos de ação e tenha cálculos de conversão sempre à mão.",
       color: "#00e676"
     },
     {
