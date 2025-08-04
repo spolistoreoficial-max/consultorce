@@ -3,9 +3,9 @@ import { Check, Star, Crown, Gift, Clock, Eye } from 'lucide-react';
 
 const UrgencyTimer = () => {
   const [timeLeft, setTimeLeft] = React.useState({
-    hours: 23,
-    minutes: 47,
-    seconds: 32
+    hours: 0,
+    minutes: 15,
+    seconds: 0
   });
 
   React.useEffect(() => {
@@ -18,7 +18,7 @@ const UrgencyTimer = () => {
         } else if (prev.hours > 0) {
           return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
         } else {
-          return { hours: 23, minutes: 59, seconds: 59 };
+          return { hours: 0, minutes: 15, seconds: 0 };
         }
       });
     }, 1000);
