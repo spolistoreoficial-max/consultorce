@@ -36,9 +36,9 @@ const PricingTable = () => {
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 max-w-3xl mx-auto">
           {/* Monthly Plan */}
-          <div className="flex-1 bg-gradient-to-br from-[#1e3a8a] to-[#1e40af] rounded-xl p-4 md:p-6 border-2 border-[#3b82f6]/50 hover:border-[#3b82f6]/80 transition-all duration-500 relative shadow-xl hover:shadow-[#3b82f6]/40 hover:transform hover:scale-[1.02]">
+          <div className="flex-1 bg-gradient-to-br from-[#1e3a8a] via-[#2563eb] to-[#3b82f6] rounded-xl p-4 md:p-6 border-2 border-[#3b82f6]/60 hover:border-[#3b82f6]/90 transition-all duration-500 relative shadow-xl hover:shadow-[#3b82f6]/50 hover:transform hover:scale-[1.02]">
             <div className="text-center mb-4">
-              <div className="w-10 h-10 bg-white/25 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg backdrop-blur-sm">
+              <div className="w-10 h-10 bg-gradient-to-br from-white/30 to-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg backdrop-blur-sm border border-white/20">
                 <Star className="w-5 h-5 text-white" strokeWidth={2} />
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">Plano Mensal</h3>
@@ -57,8 +57,8 @@ const PricingTable = () => {
             <div className="space-y-2 mb-4">
               {monthlyFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Check className="w-2.5 h-2.5 text-[#1e3a8a]" strokeWidth={3} />
+                  <div className="w-4 h-4 bg-gradient-to-br from-white to-gray-100 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg border border-white/30">
+                    <Check className="w-2.5 h-2.5 text-[#2563eb]" strokeWidth={3} />
                   </div>
                   <span className="text-white text-xs md:text-sm font-semibold">{feature}</span>
                 </div>
