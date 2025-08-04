@@ -1,5 +1,81 @@
 import React from 'react';
-import { Check, Star, Crown, Gift } from 'lucide-react';
+import { Check, Star, Crown, Gift, Clock, Eye } from 'lucide-react';
+
+const UrgencyTimer = () => {
+  const [timeLeft, setTimeLeft] = React.useState({
+    hours: 23,
+    minutes: 47,
+    seconds: 32
+  });
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev.seconds > 0) {
+          return { ...prev, seconds: prev.seconds - 1 };
+        } else if (prev.minutes > 0) {
+          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
+        } else if (prev.hours > 0) {
+          return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
+        } else {
+          return { hours: 23, minutes: 59, seconds: 59 };
+        }
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="bg-red-500 text-white px-3 py-2 rounded-lg text-center mb-4 animate-pulse">
+      <div className="flex items-center justify-center space-x-2 mb-1">
+        <Clock className="w-4 h-4" />
+        <span className="font-bold text-sm">OFERTA EXPIRA EM:</span>
+      </div>
+      <div className="flex justify-center space-x-2 font-mono font-bold">
+        <span className="bg-white text-red-500 px-2 py-1 rounded text-sm">
+          {String(timeLeft.hours).padStart(2, '0')}
+        </span>
+        <span>:</span>
+        <span className="bg-white text-red-500 px-2 py-1 rounded text-sm">
+          {String(timeLeft.minutes).padStart(2, '0')}
+        </span>
+        <span>:</span>
+        <span className="bg-white text-red-500 px-2 py-1 rounded text-sm">
+          {String(timeLeft.seconds).padStart(2, '0')}
+        </span>
+      </div>
+    </div>
+  );
+};
+
+const ViewerCounter = () => {
+  const [viewers, setViewers] = React.useState(47);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setViewers(prev => {
+        const change = Math.random() > 0.5 ? 1 : -1;
+        const newValue = prev + change;
+        return Math.max(35, Math.min(65, newValue));
+      });
+    }, 3000 + Math.random() * 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="bg-[#00e676] text-[#15192c] px-3 py-2 rounded-lg text-center mb-4">
+      <div className="flex items-center justify-center space-x-2">
+        <Eye className="w-4 h-4" />
+        <span className="font-bold text-sm">
+          {viewers} pessoas visualizando agora
+        </span>
+      </div>
+    </div>
+  );
+};
+
 
 const PricingTable = () => {
   const monthlyFeatures = [
@@ -26,6 +102,8 @@ const PricingTable = () => {
     <section id="pricing" className="py-8 md:py-12 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-6 md:mb-8">
+          <UrgencyTimer />
+          <ViewerCounter />
           <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">
             Escolha seu <span className="text-[#00e676]">plano</span>
           </h2>
