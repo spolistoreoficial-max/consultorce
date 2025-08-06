@@ -5,10 +5,20 @@ const ThankYouPage = () => {
   const [countdown, setCountdown] = useState(5);
   const [redirected, setRedirected] = useState(false);
 
-  const whatsappMessage = "Oi! Quero ativar meu acesso ao Agente Consultor Expert";
-  const whatsappUrl = `https://wa.me/5511991333190?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappMessage = "Oi! Acabei de comprar o Orion e quero ativar meu acesso";
+  const whatsappUrl = `https://wa.me/5511986131110?text=${encodeURIComponent(whatsappMessage)}`;
 
   useEffect(() => {
+    // Facebook Pixel - Purchase Event
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Purchase', {
+        value: 482.40,
+        currency: 'BRL',
+        content_name: 'Orion - Consultor de IA',
+        content_category: 'Software'
+      });
+    }
+
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev <= 1 && !redirected) {
@@ -140,8 +150,8 @@ const ThankYouPage = () => {
         {/* Footer */}
         <p className="text-sm text-[#a0aec0] mt-8">
           Dúvidas? Entre em contato conosco pelo WhatsApp: 
-          <a href="https://wa.me/5511991333190" className="text-[#25d366] hover:underline ml-1">
-            +55 11 99133-3190
+          <a href="https://wa.me/5511986131110" className="text-[#25d366] hover:underline ml-1">
+            +55 11 98613-1110
           </a>
         </p>
       </div>
