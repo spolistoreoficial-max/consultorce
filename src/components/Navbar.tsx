@@ -61,12 +61,6 @@ const Navbar = () => {
             >
               Contato
             </a>
-            <Link
-              to="/obrigado"
-              className="text-xs text-[#a0aec0] hover:text-[#00e676] transition-colors duration-300"
-            >
-              Preview
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,13 +107,6 @@ const Navbar = () => {
               >
                 Contato
               </a>
-              <Link
-                to="/obrigado"
-                className="block text-[#a0aec0] hover:text-[#00e676] transition-colors duration-300 font-medium py-2 text-sm"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Preview Obrigado
-              </Link>
             </div>
           </div>
         )}
