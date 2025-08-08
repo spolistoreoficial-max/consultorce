@@ -116,9 +116,9 @@ const PricingTable = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 max-w-4xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 max-w-5xl mx-auto px-2">
           {/* Monthly Plan */}
-          <div className="flex-1 bg-[#1d2233] rounded-2xl p-4 md:p-6 lg:p-8 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative">
+          <div className="flex-1 bg-[#1d2233] rounded-2xl p-6 md:p-8 lg:p-10 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative max-w-md mx-auto lg:mx-0">
             {/* Discount Badge */}
             <div className="absolute -top-1 -right-1 z-10">
               <div className="bg-[#ffe066] text-[#15192c] px-2 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
@@ -174,7 +174,7 @@ const PricingTable = () => {
           </div>
 
           {/* Annual Plan - Most Popular */}
-          <div className="flex-1 bg-gradient-to-br from-[#00e676] to-[#21a1ff] rounded-2xl p-4 md:p-6 lg:p-8 hover:shadow-xl transition-all duration-500 relative transform hover:scale-105 shadow-xl">
+          <div className="flex-1 bg-gradient-to-br from-[#00e676] to-[#21a1ff] rounded-2xl p-6 md:p-8 lg:p-10 hover:shadow-xl transition-all duration-500 relative transform hover:scale-105 shadow-xl max-w-md mx-auto lg:mx-0">
             {/* Popular Badge */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <div className="bg-[#ffe066] text-[#15192c] px-2 md:px-3 py-1 rounded-full font-bold text-xs flex items-center space-x-1 shadow-lg border border-white/20">
