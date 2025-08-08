@@ -129,34 +129,16 @@ const WhatsAppRoll = () => {
 
   const currentMessages = conversations[currentConversation].messages;
 
-  // Auto scroll to bottom when new messages appear
-  const scrollToBottom = () => {
-    if (messagesEndRef.current && messagesContainerRef.current) {
-      // Só faz scroll se o container estiver visível na viewport
-      const rect = messagesContainerRef.current.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-      
-      if (isVisible) {
-        messagesEndRef.current.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'end'
-        });
-      }
-    }
-  };
-
-  // Função para scroll interno do chat (não interfere com a página)
+  // Scroll interno do container de mensagens (não interfere com a página)
   const scrollChatToBottom = () => {
     if (messagesEndRef.current && messagesContainerRef.current) {
-      messagesEndRef.current.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'end'
-      });
+      const container = messagesContainerRef.current;
+      container.scrollTop = container.scrollHeight;
     }
   };
 
   useEffect(() => {
-    // Usa scroll interno que não interfere com a página
+    // Scroll interno apenas dentro do container do chat
     scrollChatToBottom();
   }, [messageIndex, isTyping]);
 
