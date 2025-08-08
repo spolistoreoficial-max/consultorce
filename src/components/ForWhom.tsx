@@ -16,7 +16,7 @@ const ForWhom = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="bg-[#1d2233] rounded-3xl p-8 md:p-12 border border-[#00e676]/20">
           <div className="text-center mb-8">
-            <h3 className="text-xl md:text-2xl lg:text-4xl font-bold mb-4 px-4">
+            <h3 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 px-4">
               <span className="text-[#21a1ff]">Para quem</span> é o Orion?
             </h3>
           </div>
@@ -25,7 +25,7 @@ const ForWhom = () => {
             {forWhom.map((item, index) => (
               <div key={index} className="flex items-center space-x-3 md:space-x-4 bg-[#15192c] rounded-xl p-4 md:p-6">
                 <CheckCircle className="w-6 h-6 text-[#00e676] flex-shrink-0" />
-                <span className="text-sm md:text-base lg:text-lg">{item}</span>
+                <span className="text-base md:text-lg lg:text-xl">{item}</span>
               </div>
             ))}
           </div>
