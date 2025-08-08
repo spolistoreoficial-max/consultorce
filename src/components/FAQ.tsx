@@ -35,7 +35,7 @@ const FAQ = () => {
     <section id="faq" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
+          <h2 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Dúvidas <span className="text-[#21a1ff]">frequentes</span>
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] px-4">
