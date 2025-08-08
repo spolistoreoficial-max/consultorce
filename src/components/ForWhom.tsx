@@ -30,6 +30,7 @@ const ForWhom = () => {
               </div>
             ))}
           </div>
+          </div>
         </div>
       </div>
     </section>
