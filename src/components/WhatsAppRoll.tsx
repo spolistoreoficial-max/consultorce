@@ -185,16 +185,16 @@ const WhatsAppRoll = () => {
     <section id="whatsapp-demo" className="py-20 px-4 bg-[#0f1419]">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Veja o <span className="text-[#25d366]">Orion</span> em ação
           </h2>
-          <p className="text-xl text-[#a0aec0]">
+          <p className="text-lg md:text-xl text-[#a0aec0] px-4">
             Simulações reais de como o Orion te ajuda no dia a dia
           </p>
         </div>
 
         {/* Conversation Selector */}
-        <div className="flex flex-wrap justify-center gap-2 mb-8 max-w-2xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
           {conversations.map((conv, index) => (
             <button
               key={index}
@@ -210,7 +210,7 @@ const WhatsAppRoll = () => {
           ))}
         </div>
         {/* WhatsApp Interface */}
-        <div className="bg-[#1d2233] rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 max-w-md mx-auto">
+        <div className="bg-[#1d2233] rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 max-w-md mx-auto mx-4">
           {/* Status Bar */}
           <div className="bg-[#075e54] px-4 py-2 flex justify-between items-center text-white text-xs">
             <span>9:41</span>
@@ -254,7 +254,7 @@ const WhatsAppRoll = () => {
           {/* Messages Container */}
           <div 
             ref={messagesContainerRef}
-            className="h-[500px] overflow-y-auto bg-[#0b0f1a] bg-opacity-50 relative"
+            className="h-[400px] md:h-[500px] overflow-y-auto bg-[#0b0f1a] bg-opacity-50 relative"
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
             }}
@@ -348,7 +348,7 @@ const WhatsAppRoll = () => {
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-lg text-[#a0aec0] mb-4">
+          <p className="text-base md:text-lg text-[#a0aec0] mb-4 px-4">
             ✨ <strong className="text-[#00e676]">Orion</strong> te ajuda em todas as situações de venda
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -358,7 +358,7 @@ const WhatsAppRoll = () => {
             >
               🔄 Reiniciar demonstração
             </button>
-            <span className="text-[#a0aec0] text-sm">
+            <span className="text-[#a0aec0] text-sm px-4 text-center">
               As conversas mudam automaticamente
             </span>
           </div>

@@ -47,27 +47,27 @@ const Differentials = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Differentials */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Por que <span className="text-[#00e676]">Orion</span> é diferente?
           </h2>
-          <p className="text-xl text-[#a0aec0] max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-[#a0aec0] max-w-2xl mx-auto px-4">
             Uma IA especializada em <span className="text-[#21a1ff]">proteção veicular</span> que realmente entende seu negócio
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20 px-4">
           {differentials.map((diff, index) => (
             <div
               key={index}
-              className="bg-[#1d2233] rounded-2xl p-8 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group"
+              className="bg-[#1d2233] rounded-2xl p-6 md:p-8 border border-gray-700/50 hover:border-[#00e676]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group"
             >
               <div className="flex items-center justify-center w-16 h-16 rounded-2xl mb-6 mx-auto" style={{backgroundColor: `${diff.color}20`}}>
                 <diff.icon className="w-8 h-8" style={{color: diff.color}} strokeWidth={2} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-center" style={{color: diff.color}}>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-center" style={{color: diff.color}}>
                 {diff.title}
               </h3>
-              <p className="text-[#a0aec0] leading-relaxed text-center">
+              <p className="text-sm md:text-base text-[#a0aec0] leading-relaxed text-center">
                 {diff.description}
               </p>
             </div>

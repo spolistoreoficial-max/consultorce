@@ -25,12 +25,12 @@ const Navbar = () => {
           {/* Logo */}
           <button
             onClick={scrollToTop}
-            className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
+            className="flex items-center space-x-2 md:space-x-3 hover:opacity-80 transition-opacity duration-300"
           >
-            <div className="w-10 h-10 bg-gradient-to-r from-[#00e676] to-[#21a1ff] rounded-xl flex items-center justify-center">
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r from-[#00e676] to-[#21a1ff] rounded-xl flex items-center justify-center">
               <Bot className="w-5 h-5 text-[#15192c]" strokeWidth={2.5} />
             </div>
-            <span className="text-xl font-bold text-[#f3f3f8]">Orion</span>
+            <span className="text-lg md:text-xl font-bold text-[#f3f3f8]">Orion</span>
           </button>
 
           {/* Desktop Menu */}
@@ -57,7 +57,7 @@ const Navbar = () => {
               href={`https://wa.me/5511986131110?text=${encodeURIComponent("Vim do Site do Orion e gostaria de tirar algumas dúvidas")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25d366] hover:bg-[#22c55e] text-white px-6 py-2 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
+              className="bg-[#25d366] hover:bg-[#22c55e] text-white px-4 md:px-6 py-2 rounded-xl font-semibold transition-all duration-300 hover:scale-105 text-sm md:text-base"
             >
               Contato
             </a>
@@ -78,7 +78,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-[#15192c] border-b border-gray-700/30 shadow-xl">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-[#15192c] border-b border-gray-700/30 shadow-xl z-40">
             <div className="px-4 py-6 space-y-4">
               <button
                 onClick={() => scrollToSection('differentials')}
@@ -102,7 +102,7 @@ const Navbar = () => {
                 href={`https://wa.me/5511986131110?text=${encodeURIComponent("Vim do Site do Orion e gostaria de tirar algumas dúvidas")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#25d366] hover:bg-[#22c55e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 text-center"
+                className="block bg-[#25d366] hover:bg-[#22c55e] text-white px-4 py-3 rounded-xl font-semibold transition-all duration-300 text-center text-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contato

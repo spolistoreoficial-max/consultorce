@@ -16,16 +16,16 @@ const ForWhom = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="bg-[#1d2233] rounded-3xl p-8 md:p-12 border border-[#00e676]/20">
           <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-4xl font-bold mb-4">
+            <h3 className="text-xl md:text-2xl lg:text-4xl font-bold mb-4 px-4">
               <span className="text-[#21a1ff]">Para quem</span> é o Orion?
             </h3>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
             {forWhom.map((item, index) => (
-              <div key={index} className="flex items-center space-x-4 bg-[#15192c] rounded-xl p-6">
+              <div key={index} className="flex items-center space-x-3 md:space-x-4 bg-[#15192c] rounded-xl p-4 md:p-6">
                 <CheckCircle className="w-6 h-6 text-[#00e676] flex-shrink-0" />
-                <span className="text-lg">{item}</span>
+                <span className="text-sm md:text-base lg:text-lg">{item}</span>
               </div>
             ))}
           </div>

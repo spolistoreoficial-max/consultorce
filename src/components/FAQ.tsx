@@ -35,15 +35,15 @@ const FAQ = () => {
     <section id="faq" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Dúvidas <span className="text-[#21a1ff]">frequentes</span>
           </h2>
-          <p className="text-xl text-[#a0aec0]">
+          <p className="text-lg md:text-xl text-[#a0aec0] px-4">
             Esclarecemos as principais questões sobre o Orion
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 px-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -51,9 +51,9 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 text-left flex items-center justify-between hover:bg-[#232938] transition-colors duration-300"
+                className="w-full p-4 md:p-6 text-left flex items-center justify-between hover:bg-[#232938] transition-colors duration-300"
               >
-                <h3 className="text-lg font-semibold pr-4">
+                <h3 className="text-base md:text-lg font-semibold pr-4">
                   {faq.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -66,9 +66,9 @@ const FAQ = () => {
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-6">
+                <div className="px-4 md:px-6 pb-4 md:pb-6">
                   <div className="pt-2 border-t border-gray-700/30">
-                    <p className="text-[#a0aec0] leading-relaxed">
+                    <p className="text-sm md:text-base text-[#a0aec0] leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -79,7 +79,7 @@ const FAQ = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-lg text-[#a0aec0] mb-4">
+          <p className="text-base md:text-lg text-[#a0aec0] mb-4 px-4">
             Ainda tem dúvidas? Fale conosco!
           </p>
           {(() => {

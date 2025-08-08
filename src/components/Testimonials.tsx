@@ -81,17 +81,17 @@ const Testimonials = () => {
     <section className="py-20 px-4 bg-[#0f1419]">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             O que dizem nossos <span className="text-[#00e676]">consultores</span>
           </h2>
-          <p className="text-xl text-[#a0aec0]">
+          <p className="text-lg md:text-xl text-[#a0aec0] px-4">
             Resultados reais de quem já usa o Orion
           </p>
         </div>
 
         <div className="relative">
           {/* Testimonial Card */}
-          <div className="bg-[#1d2233] rounded-3xl p-8 md:p-12 border border-gray-700/50 relative overflow-hidden">
+          <div className="bg-[#1d2233] rounded-3xl p-6 md:p-8 lg:p-12 border border-gray-700/50 relative overflow-hidden mx-4">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#00e676]/5 rounded-full -translate-y-16 translate-x-16"></div>
             
@@ -104,18 +104,18 @@ const Testimonials = () => {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-lg md:text-xl text-center mb-8 leading-relaxed">
+              <blockquote className="text-base md:text-lg lg:text-xl text-center mb-6 md:mb-8 leading-relaxed">
                 "{testimonials[currentIndex].text}"
               </blockquote>
 
               {/* Author */}
-              <div className="flex items-center justify-center space-x-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
                 <img
                   src={testimonials[currentIndex].avatar}
                   alt={testimonials[currentIndex].name}
                   className="w-16 h-16 rounded-full border-2 border-[#00e676]"
                 />
-                <div className="text-left">
+                <div className="text-center sm:text-left">
                   <h4 className="font-bold text-[#00e676] text-lg">
                     {testimonials[currentIndex].name}
                   </h4>

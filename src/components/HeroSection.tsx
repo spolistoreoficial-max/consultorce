@@ -34,19 +34,19 @@ const HeroSection = () => {
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           <span className="text-[#00e676]">Orion:</span>
-          <span className="block text-[#f3f3f8] mt-2">O Consultor Expert que te ajuda a</span>
-          <span className="block text-[#21a1ff] mt-2">fechar mais vendas</span>
-          <span className="block text-[#ffe066] mt-2">24 horas por dia.</span>
+          <span className="block text-[#f3f3f8] mt-1 md:mt-2">O Consultor Expert que te ajuda a</span>
+          <span className="block text-[#21a1ff] mt-1 md:mt-2">fechar mais vendas</span>
+          <span className="block text-[#ffe066] mt-1 md:mt-2">24 horas por dia.</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-[#a0aec0] mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl text-[#a0aec0] mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
           Tenha um <strong className="text-[#00e676]">especialista de IA</strong> ao seu lado para quebrar objeções, 
           criar scripts, organizar sua rotina e <strong className="text-[#21a1ff]">bater metas</strong> em proteção veicular.
         </p>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#00e676]/20">
             <Clock className="w-8 h-8 text-[#00e676] mb-3 mx-auto" />
             <div className="text-2xl font-bold text-[#00e676]">24/7</div>
@@ -67,12 +67,12 @@ const HeroSection = () => {
         {/* CTA Button */}
         <button
           onClick={scrollToWhatsAppRoll}
-          className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-12 py-4 rounded-2xl text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-105 transition-all duration-300 transform hover:-translate-y-1"
+          className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 md:px-12 py-3 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-105 transition-all duration-300 transform hover:-translate-y-1 mx-4"
         >
           Ver Orion em Ação 🚀
         </button>
 
-        <p className="text-sm text-[#a0aec0] mt-4">
+        <p className="text-sm text-[#a0aec0] mt-4 px-4">
           ⭐ Garantia de 7 dias • Sem compromisso
         </p>
       </div>
