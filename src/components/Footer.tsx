@@ -57,7 +57,7 @@ const Footer = () => {
             {/* WhatsApp Contact */}
             <div className="mb-8">
               <h3 className="text-xl font-bold mb-4 text-[#00e676]">
-                Dúvidas? Fale direto conosco!
+                Ainda tem dúvidas?
               </h3>
               {(() => {
                 const whatsappMessage = "Vim do Site do Orion e gostaria de tirar algumas dúvidas";
