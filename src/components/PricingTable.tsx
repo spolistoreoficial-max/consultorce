@@ -238,6 +238,7 @@ const PricingTable = () => {
         </div>
 
       </div>
+      </div>
     </section>
   );
 };
