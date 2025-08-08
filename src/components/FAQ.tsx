@@ -82,14 +82,20 @@ const FAQ = () => {
           <p className="text-lg text-[#a0aec0] mb-4">
             Ainda tem dúvidas? Fale conosco!
           </p>
+          {(() => {
+            const whatsappMessage = "Vim do Site do Orion e gostaria de tirar algumas dúvidas";
+            const whatsappUrl = `https://wa.me/5511986131110?text=${encodeURIComponent(whatsappMessage)}`;
+            return (
           <a
-            href="https://wa.me/5511986131110"
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 bg-[#25d366] hover:bg-[#22c55e] text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 hover:transform hover:scale-105"
           >
             <span>💬 Conversar no WhatsApp</span>
           </a>
+            );
+          })()}
         </div>
       </div>
     </section>

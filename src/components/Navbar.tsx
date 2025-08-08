@@ -99,7 +99,7 @@ const Navbar = () => {
                 FAQ
               </button>
               <a
-                href="https://wa.me/5511986131110"
+                href={`https://wa.me/5511986131110?text=${encodeURIComponent("Vim do Site do Orion e gostaria de tirar algumas dúvidas")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-[#25d366] hover:bg-[#22c55e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 text-center"
