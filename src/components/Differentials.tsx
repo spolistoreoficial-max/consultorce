@@ -43,11 +43,11 @@ const Differentials = () => {
 
 
   return (
-    <section id="differentials" className="py-12 px-4">
+    <section id="differentials" className="py-8 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Differentials */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
             Por que <span className="text-[#00e676]">Orion</span> é diferente?
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] max-w-2xl mx-auto px-4">
