@@ -5,7 +5,7 @@ const HeroSection = () => {
   const scrollToWhatsAppRoll = () => {
     const element = document.getElementById('whatsapp-demo');
     if (element) {
-      const navbarHeight = 64; // altura da navbar
+      const navbarHeight = 100; // altura da navbar + margem extra para PC
       const elementPosition = element.offsetTop - navbarHeight;
       window.scrollTo({
         top: elementPosition,
