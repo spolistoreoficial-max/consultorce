@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         {/* Impact Phrase */}
         <div className="mb-8">
-          <p className="text-2xl md:text-4xl lg:text-5xl text-[#ffe066] font-bold mb-6 animate-pulse drop-shadow-lg">
+          <p className="text-2xl md:text-4xl lg:text-5xl text-[#ffe066] font-bold mb-6 drop-shadow-lg">
             Cansado de perder vendas na proteção veicular?
           </p>
         </div>
