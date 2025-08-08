@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Clock, TrendingUp, BarChart3, Users } from 'lucide-react';
+import { MessageSquare, Clock, TrendingUp, BarChart3, Users, Shield } from 'lucide-react';
 
 const Differentials = () => {
   const differentials = [
@@ -32,6 +32,12 @@ const Differentials = () => {
       title: "Evolui com seu time",
       description: "Quanto mais você usa, mais inteligente fica. Aprende com suas vendas e melhora constantemente.",
       color: "#21a1ff"
+    },
+    {
+      icon: Shield,
+      title: "Suporte especializado em proteção veicular",
+      description: "Conhecimento específico do setor, regulamentações, coberturas e particularidades do mercado brasileiro.",
+      color: "#ffe066"
     }
   ];
 
