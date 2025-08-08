@@ -108,7 +108,7 @@ const PricingTable = () => {
       <div className="px-3 md:px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-4 md:mb-8">
-          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 md:mb-3 leading-tight px-2">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-2 md:mb-3 leading-tight px-2">
             Escolha seu <span className="text-[#00e676]">plano de assinatura</span>
           </h2>
           <p className="text-sm md:text-base lg:text-lg text-[#a0aec0] max-w-2xl mx-auto leading-relaxed px-2">
