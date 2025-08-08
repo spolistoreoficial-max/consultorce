@@ -81,7 +81,7 @@ const Testimonials = () => {
     <section className="py-20 px-4 bg-[#0f1419]">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
+          <h2 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
             O que dizem nossos <span className="text-[#00e676]">consultores</span>
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] px-4">
