@@ -77,15 +77,17 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Button */}
-        <button
-          onClick={scrollToWhatsAppRoll}
-          className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-16 md:px-12 py-6 md:py-4 rounded-2xl text-xl md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-105 transition-all duration-300 transform hover:-translate-y-1 mx-4 flex items-center justify-center whitespace-nowrap"
-        >
-          <span className="flex items-center space-x-2">
-            <span>Ver Orion em Ação</span>
-            <span>🚀</span>
-          </span>
-        </button>
+        <div className="flex justify-center">
+          <button
+            onClick={scrollToWhatsAppRoll}
+            className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 md:px-12 py-4 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-105 transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <span className="flex items-center space-x-2">
+              <span>Ver Orion em Ação</span>
+              <span>🚀</span>
+            </span>
+          </button>
+        </div>
 
         <p className="text-sm text-[#a0aec0] mt-4 px-4">
           ⭐ Garantia de 7 dias • Sem compromisso
