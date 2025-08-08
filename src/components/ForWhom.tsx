@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 const ForWhom = () => {
   const forWhom = [
     "Consultores que querem alta performance",
-    "Quem cansa de perder vendas por falta de resposta",
+    "Quem está cansado de perder vendas por não saber o que responder na hora certa",
     "Quem quer quebrar objeções sem decorar detalhes",
     "Quem busca autonomia e evolução com IA"
   ];
