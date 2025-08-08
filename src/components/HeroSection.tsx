@@ -19,6 +19,13 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto max-w-4xl text-center relative z-10">
+        {/* Impact Phrase */}
+        <div className="mb-8">
+          <p className="text-xl md:text-2xl text-[#ff6b6b] font-bold mb-4 animate-pulse">
+            Cansado de perder vendas na proteção veicular?
+          </p>
+        </div>
+
         {/* Logo/Icon */}
         <div className="mb-8 flex justify-center">
           <div className="relative">
