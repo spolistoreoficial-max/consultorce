@@ -3,9 +3,7 @@ import { Bot, Zap, Clock, TrendingUp } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToWhatsAppRoll = () => {
-    const element = document.querySelector('section:has(h2:contains("Veja o"))') || 
-                   document.querySelector('[class*="WhatsAppRoll"]') ||
-                   document.getElementById('whatsapp-demo');
+    const element = document.getElementById('whatsapp-demo');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
