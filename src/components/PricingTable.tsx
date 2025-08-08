@@ -168,6 +168,12 @@ const PricingTable = () => {
             <p className="text-center text-xs text-[#a0aec0] mt-2 md:mt-3 font-medium">
               🟢 7 dias de garantia. Experimente sem risco!
             </p>
+
+            <div className="bg-[#00e676]/10 rounded-lg p-3 mt-3 border border-[#00e676]/30">
+              <p className="text-center text-sm font-bold text-[#00e676]">
+                🔓 Sem Fidelidade: Cancele quando quiser!
+              </p>
+            </div>
           </div>
 
           {/* Annual Plan - Most Popular */}
@@ -221,6 +227,12 @@ const PricingTable = () => {
             <p className="text-center text-xs text-white/90 mt-2 md:mt-3 font-medium">
               🟢 7 dias de garantia. Experimente sem risco!
             </p>
+
+            <div className="bg-white/20 rounded-lg p-3 mt-3 border border-white/30 backdrop-blur-sm">
+              <p className="text-center text-sm font-bold text-white">
+                🔓 Sem Fidelidade: Cancele quando quiser!
+              </p>
+            </div>
           </div>
         </div>
         </div>
