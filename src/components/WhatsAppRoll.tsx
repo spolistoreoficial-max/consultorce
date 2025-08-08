@@ -12,6 +12,8 @@ const WhatsAppRoll = () => {
     // Conversa 1: Quebra de objeção de preço
     {
       title: "Quebra de Objeção - Preço",
+      userAvatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      userName: "Carlos",
       messages: [
         {
           id: 1,
@@ -42,6 +44,8 @@ const WhatsAppRoll = () => {
     // Conversa 2: Cálculo de conversão
     {
       title: "Cálculo de Conversão",
+      userAvatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      userName: "Marina",
       messages: [
         {
           id: 1,
@@ -66,6 +70,8 @@ const WhatsAppRoll = () => {
     // Conversa 3: Script para objeção "vou pensar"
     {
       title: "Script - Vou Pensar",
+      userAvatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      userName: "Roberto",
       messages: [
         {
           id: 1,
@@ -96,6 +102,8 @@ const WhatsAppRoll = () => {
     // Conversa 4: Organização de rotina
     {
       title: "Organização de Rotina",
+      userAvatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      userName: "Ana",
       messages: [
         {
           id: 1,
@@ -294,7 +302,11 @@ const WhatsAppRoll = () => {
                     </div>
                     {message.sender === 'user' && (
                       <div className="w-6 h-6 bg-[#21a1ff] rounded-full flex items-center justify-center flex-shrink-0 mb-1">
-                        <User className="w-3 h-3 text-white" strokeWidth={3} />
+                        <img 
+                          src={conversations[currentConversation].userAvatar} 
+                          alt={conversations[currentConversation].userName}
+                          className="w-6 h-6 rounded-full object-cover"
+                        />
                       </div>
                     )}
                   </div>
