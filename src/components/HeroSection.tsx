@@ -61,17 +61,17 @@ const HeroSection = () => {
         <div className="grid grid-cols-3 gap-2 md:gap-6 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#00e676]/20">
             <Clock className="w-8 h-8 text-[#00e676] mb-3 mx-auto" />
-            <div className="text-2xl font-bold text-[#00e676]">24/7</div>
+            <div className="text-lg md:text-2xl font-bold text-[#00e676]">24/7</div>
             <div className="text-xs md:text-sm text-[#a0aec0]">Disponível sempre</div>
           </div>
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#21a1ff]/20">
             <TrendingUp className="w-8 h-8 text-[#21a1ff] mb-3 mx-auto" />
-            <div className="text-2xl font-bold text-[#21a1ff]">+300%</div>
+            <div className="text-lg md:text-2xl font-bold text-[#21a1ff]">+300%</div>
             <div className="text-xs md:text-sm text-[#a0aec0]">Mais conversões</div>
           </div>
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#ffe066]/20">
             <Bot className="w-8 h-8 text-[#ffe066] mb-3 mx-auto" />
-            <div className="text-2xl font-bold text-[#ffe066]">IA</div>
+            <div className="text-lg md:text-2xl font-bold text-[#ffe066]">IA</div>
             <div className="text-xs md:text-sm text-[#a0aec0]">Inteligência avançada</div>
           </div>
         </div>
