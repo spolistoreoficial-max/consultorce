@@ -8,7 +8,7 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navbarHeight = 100; // altura da navbar + margem extra para PC
+      const navbarHeight = 150; // altura da navbar + margem extra para PC
       const elementPosition = element.offsetTop - navbarHeight;
       window.scrollTo({
         top: elementPosition,
