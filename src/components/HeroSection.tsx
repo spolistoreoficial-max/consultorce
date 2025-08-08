@@ -21,9 +21,14 @@ const HeroSection = () => {
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         {/* Impact Phrase */}
         <div className="mb-8">
-          <p className="text-2xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#00e676] to-[#21a1ff] bg-clip-text text-transparent font-bold mb-6 drop-shadow-lg">
-            Cansado de perder vendas na proteção veicular? Conheça o
-          </p>
+          <div className="mb-6">
+            <p className="text-2xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#00e676] to-[#21a1ff] bg-clip-text text-transparent font-bold mb-4 drop-shadow-lg">
+              Cansado de perder vendas na proteção veicular?
+            </p>
+            <p className="text-xl md:text-3xl lg:text-4xl bg-gradient-to-r from-[#00e676] to-[#21a1ff] bg-clip-text text-transparent font-bold drop-shadow-lg">
+              Conheça o
+            </p>
+          </div>
         </div>
 
         {/* Logo/Icon */}
