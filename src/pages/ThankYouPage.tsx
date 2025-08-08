@@ -150,7 +150,7 @@ const ThankYouPage = () => {
         {/* Footer */}
         <p className="text-sm text-[#a0aec0] mt-8">
           Dúvidas? Entre em contato conosco pelo WhatsApp: 
-          <a href="https://wa.me/5511986131110" className="text-[#25d366] hover:underline ml-1">
+          <a href={`https://wa.me/5511986131110?text=${encodeURIComponent("Vim do Site do Orion e gostaria de tirar algumas dúvidas")}`} className="text-[#25d366] hover:underline ml-1">
             +55 11 98613-1110
           </a>
         </p>
