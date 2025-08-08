@@ -67,7 +67,7 @@ const HeroSection = () => {
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#21a1ff]/20">
             <TrendingUp className="w-8 h-8 text-[#21a1ff] mb-3 mx-auto" />
             <div className="text-base md:text-xl font-bold text-[#21a1ff] text-center">+300%</div>
-            <div className="text-xs md:text-sm text-[#a0aec0]">Mais conversões</div>
+            <div className="text-xs md:text-sm text-[#a0aec0] mt-1">Mais conversões</div>
           </div>
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#ffe066]/20">
             <Bot className="w-8 h-8 text-[#ffe066] mb-3 mx-auto" />
