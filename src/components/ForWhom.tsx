@@ -22,14 +22,12 @@ const ForWhom = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {forWhom.map((item, index) => (
               <div key={index} className="flex items-center space-x-4 bg-[#15192c] rounded-xl p-6">
                 <CheckCircle className="w-6 h-6 text-[#00e676] flex-shrink-0" />
                 <span className="text-lg">{item}</span>
               </div>
             ))}
-          </div>
           </div>
         </div>
       </div>
