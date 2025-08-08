@@ -36,7 +36,7 @@ const Differentials = () => {
     {
       icon: Shield,
       title: "Suporte especializado em proteção veicular",
-      description: "Conhecimento específico do setor, regulamentações, coberturas e particularidades do mercado brasileiro.",
+      description: "Conhecimento específico do setor e particularidades do mercado de proteção.",
       color: "#ffe066"
     }
   ];
