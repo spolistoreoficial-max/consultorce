@@ -43,7 +43,7 @@ const Differentials = () => {
 
 
   return (
-    <section id="differentials" className="py-20 px-4">
+    <section id="differentials" className="py-12 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Differentials */}
         <div className="text-center mb-16">
