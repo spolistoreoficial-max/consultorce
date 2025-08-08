@@ -186,7 +186,7 @@ const WhatsAppRoll = () => {
       <div className="container mx-auto max-w-4xl">
         {/* Header Section - Stays at top */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
+          <h2 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Veja o <span className="text-[#25d366]">Orion</span> em ação
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] px-4">
