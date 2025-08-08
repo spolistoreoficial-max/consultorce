@@ -21,8 +21,8 @@ function App() {
             <HeroSection />
             <Differentials />
             <WhatsAppRoll />
-            <PricingTable />
             <Testimonials />
+            <PricingTable />
             <FAQ />
             <Footer />
           </div>
