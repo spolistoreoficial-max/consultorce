@@ -228,11 +228,6 @@ const PricingTable = () => {
               🟢 7 dias de garantia. Experimente sem risco!
             </p>
 
-            <div className="bg-white/20 rounded-lg p-3 mt-3 border border-white/30 backdrop-blur-sm">
-              <p className="text-center text-sm font-bold text-white">
-                🔓 Sem Fidelidade: Cancele quando quiser!
-              </p>
-            </div>
           </div>
         </div>
         </div>
