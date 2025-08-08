@@ -29,7 +29,7 @@ const Differentials = () => {
     },
     {
       icon: Users,
-      title: "Evolui com seu time",
+      title: "Evolui com o seu uso",
       description: "Quanto mais você usa, mais inteligente fica. Aprende com suas vendas e melhora constantemente.",
       color: "#21a1ff"
     },
