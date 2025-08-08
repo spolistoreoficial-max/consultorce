@@ -28,6 +28,30 @@ const Testimonials = () => {
       avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
       text: "Implementei o Orion para toda minha equipe e os resultados foram extraordinários. 40% de aumento nas conversões no primeiro mês. A IA realmente entende do negócio e dá respostas precisas.",
       rating: 5
+    },
+    {
+      name: "Fernanda Lima",
+      location: "Brasília, DF",
+      role: "Consultora Independente",
+      avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      text: "O Orion revolucionou minha organização! Antes eu perdia leads por falta de follow-up. Agora tenho uma rotina estruturada e nunca mais esqueci de um cliente. Minha produtividade triplicou!",
+      rating: 5
+    },
+    {
+      name: "Diego Oliveira",
+      location: "Curitiba, PR",
+      role: "Consultor Pleno",
+      avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      text: "Sempre travava nas objeções mais difíceis. Com o Orion, tenho script para tudo! 'Muito caro', 'vou pensar', 'já tenho seguro'... Para cada situação ele me dá a resposta perfeita. Virei especialista!",
+      rating: 5
+    },
+    {
+      name: "Juliana Ferreira",
+      location: "Salvador, BA", 
+      role: "Gerente Regional",
+      avatar: "https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
+      text: "O que mais me impressiona é como o Orion aprende comigo. Quanto mais uso, melhores ficam as respostas. É como ter um mentor que evolui junto comigo. Indispensável para qualquer consultor sério!",
+      rating: 5
     }
   ];
 
