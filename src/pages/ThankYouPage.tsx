@@ -11,10 +11,26 @@ const ThankYouPage = () => {
   useEffect(() => {
     // Facebook Pixel - Purchase Event
     if (typeof window !== 'undefined' && window.fbq) {
+      // Detectar qual plano foi comprado baseado no referrer ou URL params
+      const urlParams = new URLSearchParams(window.location.search);
+      const referrer = document.referrer;
+      
+      // Verificar se veio do plano mensal ou anual
+      const isMonthlyPlan = referrer.includes('bReuhAT') || urlParams.get('plan') === 'monthly';
+      const isAnnualPlan = referrer.includes('Kt22F7e') || urlParams.get('plan') === 'annual';
+      
+      let purchaseValue = 482.40; // Default anual
+      let planName = 'Orion - Plano Anual';
+      
+      if (isMonthlyPlan) {
+        purchaseValue = 67.00;
+        planName = 'Orion - Plano Mensal';
+      }
+      
       window.fbq('track', 'Purchase', {
-        value: 482.40,
+        value: purchaseValue,
         currency: 'BRL',
-        content_name: 'Orion - Consultor de IA',
+        content_name: planName,
         content_category: 'Software'
       });
     }
