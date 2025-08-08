@@ -12,7 +12,7 @@ const ForWhom = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-12 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="bg-[#1d2233] rounded-3xl p-8 md:p-12 border border-[#00e676]/20">
           <div className="text-center mb-8">
