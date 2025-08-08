@@ -228,6 +228,7 @@ const PricingTable = () => {
 
           </div>
         </div>
+        </div>
 
         <div className="text-center mt-8 md:mt-12 px-2">
           <p className="text-xs md:text-sm lg:text-base text-[#a0aec0] mb-2 md:mb-3 font-medium">
