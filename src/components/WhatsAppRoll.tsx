@@ -4,35 +4,122 @@ import { Bot, User, ArrowLeft, Phone, Video, MoreVertical } from 'lucide-react';
 const WhatsAppRoll = () => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
+  const [currentConversation, setCurrentConversation] = useState(0);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
 
-  const messages = [
+  const conversations = [
+    // Conversa 1: Quebra de objeção de preço
     {
-      id: 1,
-      sender: 'user',
-      text: 'Orion, o cliente achou caro. O que eu posso responder?',
-      time: '14:30'
+      title: "Quebra de Objeção - Preço",
+      messages: [
+        {
+          id: 1,
+          sender: 'user',
+          text: 'Orion, o cliente achou caro. O que eu posso responder?',
+          time: '14:30'
+        },
+        {
+          id: 2,
+          sender: 'orion',
+          text: 'Pode responder o seguinte: "Entendo! Mas qual seria o impacto financeiro no seu bolso se hoje você batesse seu veículo? Pode custar de 10 a 50 mil dependendo da situação. O investimento na proteção é justamente para você economizar milhares de reais quando mais precisar."',
+          time: '14:31'
+        },
+        {
+          id: 3,
+          sender: 'user',
+          text: 'Perfeito! Bem melhor que a resposta que eu tinha pensado. Valeu, Orion!',
+          time: '14:32'
+        },
+        {
+          id: 4,
+          sender: 'orion',
+          text: 'Opa, magina! Estou aqui para te ajudar sempre que precisar! 🚀',
+          time: '14:33'
+        }
+      ]
     },
+    // Conversa 2: Cálculo de conversão
     {
-      id: 2,
-      sender: 'orion',
-      text: 'Pode responder o seguinte: Entendo! Mas qual seria o impacto financeiro no seu bolso se hoje você batesse seu veículo? Pode custar de 10 a 50 mil dependendo da situação. O investimento na proteção é justamente para você economizar milhares de reais quando mais precisar.',
-      time: '14:31'
+      title: "Cálculo de Conversão",
+      messages: [
+        {
+          id: 1,
+          sender: 'user',
+          text: 'Orion, esse mês fechei 25 placas e fiz 175 cotações, qual é minha conversão?',
+          time: '15:45'
+        },
+        {
+          id: 2,
+          sender: 'orion',
+          text: 'Sua taxa de conversão foi de 14,3% (25 vendas ÷ 175 cotações). Isso está acima da média do mercado que é 8-12%! 👏\n\nPara melhorar ainda mais, foque em:\n• Qualificar melhor os leads\n• Usar scripts para objeções\n• Follow-up em 24-48h',
+          time: '15:46'
+        },
+        {
+          id: 3,
+          sender: 'user',
+          text: 'Caramba, não sabia que estava acima da média! Obrigado pelas dicas!',
+          time: '15:47'
+        }
+      ]
     },
+    // Conversa 3: Script para objeção "vou pensar"
     {
-      id: 3,
-      sender: 'user',
-      text: 'Perfeito, bem melhor que a resposta que eu tinha pensado! Valeu, Orion!',
-      time: '14:32'
+      title: "Script - Vou Pensar",
+      messages: [
+        {
+          id: 1,
+          sender: 'user',
+          text: 'Cliente falou "vou pensar". Como respondo?',
+          time: '16:20'
+        },
+        {
+          id: 2,
+          sender: 'orion',
+          text: 'Use este script: "Entendo perfeitamente! É uma decisão importante mesmo. Me ajuda a entender: o que especificamente você gostaria de pensar? É sobre o valor, cobertura ou alguma dúvida técnica? Assim posso esclarecer agora e você decide com mais segurança."',
+          time: '16:21'
+        },
+        {
+          id: 3,
+          sender: 'user',
+          text: 'Funcionou! Ele disse que era sobre a cobertura e consegui esclarecer. Fechou! 🎉',
+          time: '16:25'
+        },
+        {
+          id: 4,
+          sender: 'orion',
+          text: 'Parabéns! 🎉 Mais uma venda fechada! A técnica de descobrir a real objeção sempre funciona.',
+          time: '16:26'
+        }
+      ]
     },
+    // Conversa 4: Organização de rotina
     {
-      id: 4,
-      sender: 'orion',
-      text: 'Opa, magina! Estou aqui para te ajudar sempre que precisar! 🚀',
-      time: '14:33'
+      title: "Organização de Rotina",
+      messages: [
+        {
+          id: 1,
+          sender: 'user',
+          text: 'Orion, me ajuda a organizar minha rotina de vendas? Estou perdido com tantos leads',
+          time: '09:15'
+        },
+        {
+          id: 2,
+          sender: 'orion',
+          text: 'Claro! Vou te dar um plano de rotina diária:\n\n🌅 MANHÃ (8h-12h):\n• Prospecção ativa (2h)\n• Follow-up de leads quentes (1h)\n• Apresentações agendadas (1h)\n\n🌞 TARDE (13h-18h):\n• Atendimento de leads novos\n• Negociação e fechamento\n• Organização para o dia seguinte',
+          time: '09:16'
+        },
+        {
+          id: 3,
+          sender: 'user',
+          text: 'Perfeito! Vou seguir essa rotina. Obrigado!',
+          time: '09:17'
+        }
+      ]
     }
   ];
+
+  const currentMessages = conversations[currentConversation].messages;
 
   // Auto scroll to bottom when new messages appear
   const scrollToBottom = () => {
@@ -49,28 +136,44 @@ const WhatsAppRoll = () => {
   }, [messageIndex, isTyping]);
 
   useEffect(() => {
-    if (messageIndex < messages.length) {
+    if (messageIndex < currentMessages.length) {
       const timer = setTimeout(() => {
-        if (messages[messageIndex].sender === 'orion') {
+        if (currentMessages[messageIndex].sender === 'orion') {
           setIsTyping(true);
           setTimeout(() => {
             setIsTyping(false);
             setMessageIndex(messageIndex + 1);
-          }, 2500);
+          }, 3000);
         } else {
           setMessageIndex(messageIndex + 1);
         }
-      }, messageIndex === 0 ? 1000 : 3500);
+      }, messageIndex === 0 ? 1000 : 4000);
+
+      return () => clearTimeout(timer);
+    } else {
+      // Quando terminar uma conversa, espera 3s e vai para a próxima
+      const timer = setTimeout(() => {
+        const nextConversation = (currentConversation + 1) % conversations.length;
+        setCurrentConversation(nextConversation);
+        setMessageIndex(0);
+        setIsTyping(false);
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
-  }, [messageIndex, messages.length]);
+  }, [messageIndex, currentMessages.length, currentConversation]);
 
   const resetAnimation = () => {
+    setCurrentConversation(0);
     setMessageIndex(0);
     setIsTyping(false);
   };
 
+  const switchConversation = (index: number) => {
+    setCurrentConversation(index);
+    setMessageIndex(0);
+    setIsTyping(false);
+  };
   return (
     <section id="whatsapp-demo" className="py-20 px-4 bg-[#0f1419]">
       <div className="container mx-auto max-w-4xl">
@@ -79,10 +182,26 @@ const WhatsAppRoll = () => {
             Veja o <span className="text-[#25d366]">Orion</span> em ação
           </h2>
           <p className="text-xl text-[#a0aec0]">
-            Simulação real de como quebrar a objeção de preço
+            Simulações reais de como o Orion te ajuda no dia a dia
           </p>
         </div>
 
+        {/* Conversation Selector */}
+        <div className="flex flex-wrap justify-center gap-2 mb-8 max-w-2xl mx-auto">
+          {conversations.map((conv, index) => (
+            <button
+              key={index}
+              onClick={() => switchConversation(index)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                currentConversation === index
+                  ? 'bg-[#25d366] text-white'
+                  : 'bg-[#1d2233] text-[#a0aec0] hover:bg-[#25d366]/20 hover:text-[#25d366]'
+              }`}
+            >
+              {conv.title}
+            </button>
+          ))}
+        </div>
         {/* WhatsApp Interface */}
         <div className="bg-[#1d2233] rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 max-w-md mx-auto">
           {/* Status Bar */}
@@ -141,7 +260,7 @@ const WhatsAppRoll = () => {
                 </div>
               </div>
 
-              {messages.slice(0, messageIndex).map((message) => (
+              {currentMessages.slice(0, messageIndex).map((message) => (
                 <div
                   key={message.id}
                   className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in`}
@@ -219,14 +338,19 @@ const WhatsAppRoll = () => {
 
         <div className="text-center mt-8">
           <p className="text-lg text-[#a0aec0] mb-4">
-            ✨ <strong className="text-[#00e676]">Orion</strong> tem respostas para todas as objeções
+            ✨ <strong className="text-[#00e676]">Orion</strong> te ajuda em todas as situações de venda
           </p>
-          <button
-            onClick={resetAnimation}
-            className="text-[#21a1ff] hover:text-[#00e676] transition-colors duration-300 underline font-semibold"
-          >
-            🔄 Ver novamente
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button
+              onClick={resetAnimation}
+              className="text-[#21a1ff] hover:text-[#00e676] transition-colors duration-300 underline font-semibold"
+            >
+              🔄 Reiniciar demonstração
+            </button>
+            <span className="text-[#a0aec0] text-sm">
+              As conversas mudam automaticamente
+            </span>
+          </div>
         </div>
       </div>
     </section>
