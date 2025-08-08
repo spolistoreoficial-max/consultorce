@@ -22,7 +22,7 @@ const HeroSection = () => {
         {/* Impact Phrase */}
         <div className="mb-8">
           <p className="text-2xl md:text-4xl lg:text-5xl text-[#ffe066] font-bold mb-6 drop-shadow-lg">
-            Cansado de perder vendas na proteção veicular?
+            Cansado de perder vendas na proteção veicular? Conheça o
           </p>
         </div>
 
@@ -40,7 +40,8 @@ const HeroSection = () => {
 
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-[#00e676]">Orion:</span> O Consultor Expert que te ajuda a 
+          <span className="text-[#00e676]">Orion:</span>
+          <span className="block text-[#f3f3f8] mt-2">O Consultor Expert que te ajuda a</span>
           <span className="block text-[#21a1ff] mt-2">fechar mais vendas</span>
           <span className="block text-[#ffe066] mt-2">24 horas por dia.</span>
         </h1>
