@@ -184,6 +184,7 @@ const WhatsAppRoll = () => {
   return (
     <section id="whatsapp-demo" className="py-20 px-4 bg-[#0f1419]">
       <div className="container mx-auto max-w-4xl">
+        {/* Header Section - Stays at top */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Veja o <span className="text-[#25d366]">Orion</span> em ação
@@ -193,7 +194,7 @@ const WhatsAppRoll = () => {
           </p>
         </div>
 
-        {/* Conversation Selector */}
+        {/* Conversation Selector - Stays at top */}
         <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
           {conversations.map((conv, index) => (
             <button
@@ -209,8 +210,11 @@ const WhatsAppRoll = () => {
             </button>
           ))}
         </div>
-        {/* WhatsApp Interface */}
-        <div className="bg-[#1d2233] rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 max-w-md mx-auto mx-4">
+
+        {/* Centered WhatsApp Container */}
+        <div className="flex items-center justify-center min-h-[60vh] px-4">
+          {/* WhatsApp Interface - Perfectly Centered */}
+          <div className="bg-[#1d2233] rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50 w-full max-w-md mx-auto">
           {/* Status Bar */}
           <div className="bg-[#075e54] px-4 py-2 flex justify-between items-center text-white text-xs">
             <span>9:41</span>
@@ -346,7 +350,9 @@ const WhatsAppRoll = () => {
             </div>
           </div>
         </div>
+        </div>
 
+        {/* Bottom Section - Stays at bottom */}
         <div className="text-center mt-8">
           <p className="text-base md:text-lg text-[#a0aec0] mb-4 px-4">
             ✨ <strong className="text-[#00e676]">Orion</strong> te ajuda em todas as situações de venda
