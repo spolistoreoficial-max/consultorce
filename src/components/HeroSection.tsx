@@ -2,8 +2,10 @@ import React from 'react';
 import { Bot, Zap, Clock, TrendingUp } from 'lucide-react';
 
 const HeroSection = () => {
-  const scrollToDifferentials = () => {
-    const element = document.getElementById('differentials');
+  const scrollToWhatsAppRoll = () => {
+    const element = document.querySelector('section:has(h2:contains("Veja o"))') || 
+                   document.querySelector('[class*="WhatsAppRoll"]') ||
+                   document.getElementById('whatsapp-demo');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -66,10 +68,10 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <button
-          onClick={scrollToDifferentials}
+          onClick={scrollToWhatsAppRoll}
           className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-12 py-4 rounded-2xl text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-105 transition-all duration-300 transform hover:-translate-y-1"
         >
-          Conheça Orion 🚀
+          Ver Orion em Ação 🚀
         </button>
 
         <p className="text-sm text-[#a0aec0] mt-4">
