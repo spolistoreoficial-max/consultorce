@@ -70,7 +70,7 @@ const Footer = () => {
                 className="inline-flex items-center space-x-3 bg-[#25d366] hover:bg-[#22c55e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>+55 11 98613-1110</span>
+                <span>Fale Conosco</span>
               </a>
                 );
               })()}
