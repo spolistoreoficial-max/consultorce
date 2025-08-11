@@ -55,32 +55,6 @@ const Differentials = () => {
           </p>
         </div>
 
-        {/* CTA Button */}
-        <div className="text-center mt-12">
-          <button
-            onClick={() => {
-              const element = document.getElementById('pricing');
-              if (element) {
-                const viewportHeight = window.innerHeight;
-                const elementHeight = element.offsetHeight;
-                const navbarHeight = 64;
-                const elementTop = element.offsetTop;
-                const centerOffset = (viewportHeight - elementHeight) / 2;
-                const scrollPosition = elementTop - centerOffset - navbarHeight;
-                window.scrollTo({
-                  top: Math.max(0, scrollPosition),
-                  behavior: 'smooth'
-                });
-              }
-            }}
-            className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 md:px-10 py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-110 transition-all duration-300 transform"
-          >
-            Assinar Agora 🚀
-          </button>
-          <p className="text-sm text-[#a0aec0] mt-3">
-            ⭐ 7 dias de garantia • Cancele quando quiser
-          </p>
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20 px-4">
           {differentials.map((diff, index) => (
             <div
