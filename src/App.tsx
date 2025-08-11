@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Differentials from './components/Differentials';
 import WhatsAppRoll from './components/WhatsAppRoll';
+import FunctionalExample from './components/FunctionalExample';
 import ForWhom from './components/ForWhom';
 import PricingTable from './components/PricingTable';
 import Testimonials from './components/Testimonials';
@@ -22,6 +23,7 @@ function App() {
             <HeroSection />
             <Differentials />
             <WhatsAppRoll />
+            <FunctionalExample />
             <Testimonials />
             <ForWhom />
             <PricingTable />
