@@ -77,10 +77,10 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center">
+        <div className="flex justify-center perspective-1000">
           <button
             onClick={scrollToWhatsAppRoll}
-            className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 md:px-12 py-4 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-105 transition-all duration-300 transform hover:-translate-y-1 animate-gentle-bounce"
+            className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 md:px-12 py-4 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-110 transition-all duration-300 transform hover:translateZ-4 animate-gentle-bounce"
           >
             <span className="flex items-center space-x-2">
               <span>Ver Orion em Ação</span>
