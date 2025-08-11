@@ -53,8 +53,10 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl lg:text-2xl text-[#a0aec0] mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
-          Tenha um <strong className="text-[#00e676]">especialista de IA</strong> ao seu lado para quebrar objeções, 
+          Tenha um <strong className="text-[#00e676]">especialista de IA</strong> direto no seu WhatsApp para quebrar objeções, 
           criar scripts, organizar sua rotina e <strong className="text-[#21a1ff]">bater metas</strong> em proteção veicular.
+          <br />
+          <span className="text-[#ffe066] font-semibold">✨ Sem instalar nada - funciona direto no seu WhatsApp!</span>
         </p>
 
         {/* Stats */}

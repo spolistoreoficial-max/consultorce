@@ -80,14 +80,16 @@ const ViewerCounter = () => {
 const PricingTable = () => {
   const monthlyFeatures = [
     "Acesso completo ao Orion IA",
+    "Adicionado direto no seu WhatsApp",
     "Scripts para todas objeções",
-    "Suporte via WhatsApp",
+    "Sem instalar nada - só adicionar contato",
     "Atualizações automáticas",
     "Garantia de 7 dias"
   ];
 
   const annualFeatures = [
     "Tudo do plano mensal",
+    "Integração instantânea no WhatsApp",
     "Economia de R$ 3.281,60",
     "Acesso a novos recursos primeiro",
     "Descontos exclusivos em ferramentas de IA",

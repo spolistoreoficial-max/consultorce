@@ -6,6 +6,10 @@ const FAQ = () => {
 
   const faqs = [
     {
+      question: "Preciso instalar algum app ou programa?",
+      answer: "Não! O Orion funciona direto no seu WhatsApp. Após a compra, você apenas adiciona o Orion como um contato normal no WhatsApp. É como adicionar um amigo - simples assim! Não precisa baixar nada, instalar nada ou configurar nada complicado."
+    },
+    {
       question: "Preciso entender de IA para usar o Orion?",
       answer: "Não! O Orion foi desenvolvido para ser super simples. É só fazer perguntas em linguagem natural, como se estivesse conversando com um colega experiente. A interface é intuitiva e você pode usar pelo WhatsApp, web ou app."
     },
@@ -14,8 +18,8 @@ const FAQ = () => {
       answer: "Sim, você pode cancelar a qualquer momento sem burocracias. Além disso, oferecemos 7 dias de garantia total. Se não ficar satisfeito, devolvemos 100% do seu dinheiro."
     },
     {
-      question: "O Orion funciona realmente no WhatsApp?",
-      answer: "Sim! Você pode conversar com o Orion diretamente pelo WhatsApp, além de acessar via web e app. É como ter um consultor especialista disponível 24h no seu celular."
+      question: "Como o Orion aparece no meu WhatsApp?",
+      answer: "Após a compra, você recebe um número para adicionar nos seus contatos. O Orion aparece como um contato normal no seu WhatsApp, com foto de perfil e tudo. Você conversa com ele como conversa com qualquer pessoa - é super natural e fácil!"
     },
     {
       question: "Tem suporte para dúvidas e problemas?",

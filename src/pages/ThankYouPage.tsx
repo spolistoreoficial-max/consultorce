@@ -86,14 +86,15 @@ const ThankYouPage = () => {
         </h1>
 
         <p className="text-lg md:text-xl lg:text-2xl text-[#a0aec0] mb-6 md:mb-8 leading-relaxed px-4">
-          Agora você tem acesso ao <strong className="text-[#00e676]">Orion</strong>, 
-          seu consultor de IA especializado em proteção veicular!
+          Agora você vai adicionar o <strong className="text-[#00e676]">Orion</strong> direto no seu WhatsApp!
+          <br />
+          <span className="text-sm text-[#ffe066]">✨ Sem instalar nada - só adicionar como contato</span>
         </p>
 
         {/* Next Steps */}
         <div className="bg-[#1d2233] rounded-3xl p-6 md:p-8 border border-[#00e676]/20 mb-6 md:mb-8 mx-4">
           <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-[#00e676]">
-            Próximo passo: Ativar seu acesso
+            Próximo passo: Adicionar Orion no WhatsApp
           </h2>
           
           <div className="space-y-3 md:space-y-4 mb-4 md:mb-6">
@@ -103,11 +104,11 @@ const ThankYouPage = () => {
             </div>
             <div className="flex items-center justify-center space-x-3 text-sm md:text-base lg:text-lg">
               <div className="w-8 h-8 bg-[#21a1ff] rounded-full flex items-center justify-center text-white font-bold">2</div>
-              <span>Envie a mensagem no WhatsApp</span>
+              <span>Receba o contato do Orion</span>
             </div>
             <div className="flex items-center justify-center space-x-3 text-sm md:text-base lg:text-lg">
               <div className="w-8 h-8 bg-[#ffe066] rounded-full flex items-center justify-center text-[#15192c] font-bold">3</div>
-              <span>Receba suas credenciais de acesso</span>
+              <span>Adicione como contato e comece a usar</span>
             </div>
           </div>
 
@@ -129,7 +130,7 @@ const ThankYouPage = () => {
             className="w-full bg-[#25d366] hover:bg-[#22c55e] text-white py-3 md:py-4 px-6 md:px-8 rounded-2xl font-bold text-base md:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-2 md:space-x-3"
           >
             <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
-            <span>Ativar Acesso no WhatsApp</span>
+            <span>Receber Contato do Orion</span>
           </button>
 
           <p className="text-xs md:text-sm text-[#a0aec0] mt-3 md:mt-4">
@@ -146,11 +147,11 @@ const ThankYouPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 text-left">
             <div className="flex items-center space-x-3">
               <CheckCircle className="w-5 h-5 text-[#00e676] flex-shrink-0" />
-              <span className="text-xs md:text-sm">Link de acesso ao Orion</span>
+              <span className="text-xs md:text-sm">Número do Orion para adicionar</span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle className="w-5 h-5 text-[#00e676] flex-shrink-0" />
-              <span className="text-xs md:text-sm">Credenciais de login</span>
+              <span className="text-xs md:text-sm">Instruções de como adicionar</span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle className="w-5 h-5 text-[#00e676] flex-shrink-0" />

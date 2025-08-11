@@ -187,10 +187,13 @@ const WhatsAppRoll = () => {
         {/* Header Section - Stays at top */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
-            Veja o <span className="text-[#25d366]">Orion</span> em ação
+            Veja o <span className="text-[#25d366]">Orion</span> funcionando direto no WhatsApp
           </h2>
           <p className="text-sm md:text-base text-[#a0aec0] max-w-2xl mx-auto">
             👇 <span className="text-[#25d366] font-semibold">Clique nos botões abaixo</span> para ver diferentes exemplos de uso
+          </p>
+          <p className="text-xs md:text-sm text-[#ffe066] font-semibold mt-2 max-w-xl mx-auto">
+            ✨ Sem instalar apps - Orion vira um contato no seu WhatsApp
           </p>
         </div>
 

@@ -11,8 +11,8 @@ const Differentials = () => {
     },
     {
       icon: Clock,
-      title: "Disponível 24h no seu WhatsApp",
-      description: "Orion nunca dorme. Acesse via WhatsApp, web ou app, a qualquer hora do dia ou da noite.",
+      title: "Direto no seu WhatsApp - sem instalar nada",
+      description: "Orion é adicionado como contato no seu WhatsApp. Sem downloads, sem apps extras. Funciona 24h no celular que você já usa.",
       color: "#21a1ff"
     },
     {
