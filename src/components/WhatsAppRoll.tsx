@@ -211,7 +211,7 @@ const WhatsAppRoll = () => {
         {/* User Guidance */}
         <div className="text-center mb-6 md:mb-8 px-4">
           <p className="text-sm md:text-base text-[#a0aec0] bg-[#1d2233] rounded-2xl px-4 py-3 border border-[#25d366]/20 max-w-2xl mx-auto">
-            👆 <span className="text-[#25d366] font-semibold">Clique nos botões acima</span> para ver diferentes exemplos de como o Orion te ajuda no dia a dia
+            👆 <span className="text-[#25d366] font-semibold">Clique nos botões acima</span> para ver diferentes exemplos de uso
           </p>
         </div>
 
