@@ -195,7 +195,7 @@ const WhatsAppRoll = () => {
         </div>
 
         {/* Conversation Selector - Stays at top */}
-        <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
+        <div className="flex flex-wrap justify-center gap-2 mb-4 max-w-2xl mx-auto px-4">
           {conversations.map((conv, index) => (
             <button
               key={index}
@@ -209,6 +209,13 @@ const WhatsAppRoll = () => {
               {conv.title}
             </button>
           ))}
+        </div>
+
+        {/* User Guidance */}
+        <div className="text-center mb-6 md:mb-8 px-4">
+          <p className="text-sm md:text-base text-[#a0aec0] bg-[#1d2233] rounded-2xl px-4 py-3 border border-[#25d366]/20 max-w-2xl mx-auto">
+            👆 <span className="text-[#25d366] font-semibold">Clique nos botões acima</span> para ver diferentes exemplos de como o Orion resolve situações reais de venda
+          </p>
         </div>
 
         {/* Centered WhatsApp Container */}
