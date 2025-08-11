@@ -192,12 +192,12 @@ const WhatsAppRoll = () => {
         </div>
 
         {/* Conversation Selector - Stays at top */}
-        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-6 max-w-3xl mx-auto px-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 mb-6 max-w-4xl mx-auto px-4">
           {conversations.map((conv, index) => (
             <button
               key={index}
               onClick={() => switchConversation(index)}
-              className={`px-5 md:px-6 py-3 md:py-4 rounded-2xl text-sm md:text-base font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
+              className={`px-2 md:px-4 py-2 md:py-3 rounded-xl text-xs md:text-sm font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center ${
                 currentConversation === index
                   ? 'bg-gradient-to-r from-[#25d366] to-[#22c55e] text-white shadow-[#25d366]/30 border-2 border-[#25d366]/50'
                   : 'bg-[#1d2233] text-[#a0aec0] hover:bg-gradient-to-r hover:from-[#25d366]/20 hover:to-[#22c55e]/20 hover:text-[#25d366] hover:border-[#25d366]/30 border-2 border-gray-700/50'
