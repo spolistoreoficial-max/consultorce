@@ -189,9 +189,6 @@ const WhatsAppRoll = () => {
           <h2 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Veja o <span className="text-[#25d366]">Orion</span> em ação
           </h2>
-          <p className="text-lg md:text-xl text-[#a0aec0] px-4">
-            Simulações reais de como o Orion te ajuda no dia a dia
-          </p>
         </div>
 
         {/* Conversation Selector - Stays at top */}
