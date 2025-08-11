@@ -190,6 +190,7 @@ const WhatsAppRoll = () => {
             Veja o <span className="text-[#25d366]">Orion</span> em ação
           </h2>
           <p className="text-sm md:text-base text-[#a0aec0] bg-[#1d2233] rounded-2xl px-4 py-3 border border-[#25d366]/20 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base text-[#a0aec0] max-w-2xl mx-auto">
             👇 <span className="text-[#25d366] font-semibold">Clique nos botões abaixo</span> para ver diferentes exemplos de uso
           </p>
         </div>
