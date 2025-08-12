@@ -222,6 +222,23 @@ const FunctionalExample = () => {
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
+                
+                {/* YouTube-style Progress Bar */}
+                <div className="flex-1 mx-8">
+                  <div className="bg-gray-700 h-1 rounded-full overflow-hidden">
+                    <div 
+                      className="bg-red-500 h-full transition-all duration-300 ease-linear"
+                      style={{ 
+                        width: `${((currentStep + 1) / steps.length) * 100}%` 
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                
+                {/* Time Display */}
+                <div className="text-xs text-[#a0aec0] font-mono">
+                  {String(Math.floor(((currentStep + 1) / steps.length) * 120)).padStart(2, '0')}:{String(Math.floor((((currentStep + 1) / steps.length) * 120 % 1) * 60)).padStart(2, '0')} / 2:00
+                </div>
               </div>
               {/* Video Content */}
               <div className="text-center mb-6">
