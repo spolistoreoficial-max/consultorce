@@ -256,15 +256,29 @@ const FunctionalExample = () => {
         {/* CTA Section */}
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://pay.kiwify.com.br/Kt22F7e"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => {
+                const element = document.getElementById('pricing');
+                if (element) {
+                  const viewportHeight = window.innerHeight;
+                  const elementHeight = element.offsetHeight;
+                  const navbarHeight = 64;
+                  
+                  const elementTop = element.offsetTop;
+                  const centerOffset = (viewportHeight - elementHeight) / 2;
+                  const scrollPosition = elementTop - centerOffset - navbarHeight;
+                  
+                  window.scrollTo({
+                    top: Math.max(0, scrollPosition),
+                    behavior: 'smooth'
+                  });
+                }
+              }}
               className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-lg"
             >
               <span>🚀 Quero receber o Orion agora</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
           </div>
         </div>
 
