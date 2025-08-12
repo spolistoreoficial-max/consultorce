@@ -222,9 +222,6 @@ const FunctionalExample = () => {
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
-                <div className="text-sm text-[#a0aec0] font-mono">
-                  {String(currentStep + 1).padStart(2, '0')}:{String(((currentStep + 1) * 15) % 60).padStart(2, '0')}
-                </div>
                 <div className="flex items-center space-x-2">
                   {isPlaying ? (
                     <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
