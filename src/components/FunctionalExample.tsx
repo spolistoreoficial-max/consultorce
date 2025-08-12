@@ -246,7 +246,9 @@ const FunctionalExample = () => {
               </div>
 
               <div className="max-w-2xl mx-auto">
-                {steps[currentStep].content}
+                <div className="min-h-[300px] flex items-center justify-center">
+                  {steps[currentStep].content}
+                </div>
               </div>
             </div>
           </div>
