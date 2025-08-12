@@ -273,7 +273,7 @@ const FunctionalExample = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-shimmer"></div>
               <span className="relative z-10 flex items-center space-x-2">
-                <span>🔥 Garantir Minha Vaga Agora</span>
+                <span>🔥 Conhecer Planos Agora</span>
                 <ArrowRight className="w-4 h-4" />
               </span>
             </button>
