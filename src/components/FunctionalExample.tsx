@@ -8,6 +8,7 @@ const FunctionalExample = () => {
 
   const protectedNumber = "••• •• •••••-••••";
   const realNumber = "+55 11 98613-1110";
+  const orionNumber = realNumber;
   const welcomeMessage = "Oi! Sou o Orion, seu consultor de IA para proteção veicular. Acabei de receber sua compra e estou pronto para te ajudar! Digite 'oi' para começarmos 🚀";
 
   const steps = [
