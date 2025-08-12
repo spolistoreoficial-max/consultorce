@@ -234,11 +234,6 @@ const FunctionalExample = () => {
                     ></div>
                   </div>
                 </div>
-                
-                {/* Time Display */}
-                <div className="text-xs text-[#a0aec0] font-mono">
-                  {String(Math.floor(((currentStep + 1) / steps.length) * 120)).padStart(2, '0')}:{String(Math.floor((((currentStep + 1) / steps.length) * 120 % 1) * 60)).padStart(2, '0')} / 2:00
-                </div>
               </div>
               {/* Video Content */}
               <div className="text-center mb-6">
