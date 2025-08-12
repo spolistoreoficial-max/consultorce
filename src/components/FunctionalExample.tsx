@@ -277,19 +277,6 @@ const FunctionalExample = () => {
           </div>
         </div>
 
-        {/* Bottom Info */}
-        <div className="mt-12 text-center">
-          <div className="space-y-3">
-            <div className="flex items-center justify-center space-x-2 text-[#ffe066]">
-              <Lock className="w-4 h-4" />
-              <span className="text-sm font-semibold">Informações protegidas até a compra</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2 text-[#00e676]">
-              <CheckCircle className="w-4 h-4" />
-              <span className="text-sm font-semibold">Acesso imediato após pagamento</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
