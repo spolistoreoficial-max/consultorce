@@ -4,7 +4,6 @@ import { CheckCircle, MessageCircle, Bot, Copy, ExternalLink, ArrowRight, Smartp
 const FunctionalExample = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [showProtectedInfo, setShowProtectedInfo] = useState(false);
 
   const protectedNumber = "••• •• •••••-••••";
   const realNumber = "+55 11 98613-1110";

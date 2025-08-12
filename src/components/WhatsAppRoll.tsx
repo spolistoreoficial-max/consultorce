@@ -141,12 +141,7 @@ const WhatsAppRoll = () => {
   };
 
   useEffect(() => {
-    // Scroll interno apenas dentro do container do chat, com delay para evitar conflitos
-    const timer = setTimeout(() => {
-      scrollChatToBottom();
-    }, 100);
-    
-    return () => clearTimeout(timer);
+    // Removido scroll automático para evitar movimento da página
   }, [messageIndex, isTyping]);
 
   useEffect(() => {
