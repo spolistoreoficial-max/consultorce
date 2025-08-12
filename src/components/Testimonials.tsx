@@ -60,7 +60,7 @@ const Testimonials = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 4000); // Mais rápido para manter engajamento
 
     return () => clearInterval(timer);
   }, [testimonials.length]);

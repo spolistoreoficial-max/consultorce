@@ -140,7 +140,7 @@ const FunctionalExample = () => {
     
     const timer = setInterval(() => {
       setCurrentStep((prev) => (prev + 1) % steps.length);
-    }, 3000); // Mais rápido como um vídeo
+    }, 2500); // Otimizado para manter atenção
 
     return () => clearInterval(timer);
   }, [isPlaying, steps.length]);

@@ -166,7 +166,7 @@ const WhatsAppRoll = () => {
         setCurrentConversation(nextConversation);
         setMessageIndex(0);
         setIsTyping(false);
-      }, 3000);
+      }, 2000); // Mais rápido para manter atenção
 
       return () => clearTimeout(timer);
     }

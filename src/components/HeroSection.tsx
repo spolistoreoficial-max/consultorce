@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bot, Zap, Clock, TrendingUp } from 'lucide-react';
+import { Bot, Zap, Clock, TrendingUp, ArrowDown } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToWhatsAppRoll = () => {
@@ -76,17 +76,18 @@ const HeroSection = () => {
         <div className="flex justify-center perspective-1000">
           <button
             onClick={scrollToWhatsAppRoll}
-            className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-8 md:px-12 py-4 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#ff6b35]/25 hover:scale-110 transition-all duration-300 transform hover:translateZ-4 animate-gentle-bounce border-2 border-[#ff6b35]/50"
+            className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#ff6b35]/25 hover:scale-105 transition-all duration-200 transform animate-pulse border-2 border-[#ff6b35]/50 relative overflow-hidden"
           >
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer"></div>
             <span className="flex items-center space-x-2">
               <span>🔥 Ver Orion em Ação</span>
-              <span>🚀</span>
+              <ArrowDown className="w-5 h-5 animate-bounce" />
             </span>
           </button>
         </div>
 
         <p className="text-sm text-[#a0aec0] mt-4 px-4">
-          ⭐ Garantia de 7 dias • Sem compromisso
+          ⭐ <span className="text-[#00e676] font-bold">Garantia de 7 dias</span> • <span className="text-[#ffe066] font-bold">Sem compromisso</span>
         </p>
       </div>
     </section>
