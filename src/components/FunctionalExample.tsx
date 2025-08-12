@@ -231,9 +231,6 @@ const FunctionalExample = () => {
                   ) : (
                     <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
                   )}
-                  <span className="text-xs text-[#a0aec0]">
-                    {isPlaying ? 'AO VIVO' : 'PAUSADO'}
-                  </span>
                 </div>
               </div>
               {/* Video Content */}
