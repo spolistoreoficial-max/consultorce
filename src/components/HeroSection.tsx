@@ -57,8 +57,6 @@ const HeroSection = () => {
           criar scripts, organizar sua rotina e <strong className="text-[#21a1ff]">bater metas</strong> em proteção veicular.
           <br />
           <span className="text-[#ffe066] font-semibold">✨ Sem instalar nada - funciona direto no seu WhatsApp!</span>
-          <br />
-          <span className="text-[#00e676] font-bold text-xl">🔥 Mais de 500 consultores já usam o Orion!</span>
         </p>
 
         {/* Stats */}
