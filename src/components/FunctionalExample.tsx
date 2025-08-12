@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { CheckCircle, MessageCircle, Bot, Copy, ExternalLink, ArrowRight, Smartphone, UserPlus } from 'lucide-react';
+import { CheckCircle, MessageCircle, Bot, Copy, ExternalLink, ArrowRight, Smartphone, UserPlus, Play, Pause, Lock } from 'lucide-react';
 
 const FunctionalExample = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [copied, setCopied] = useState(false);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [showProtectedInfo, setShowProtectedInfo] = useState(false);
 
-  const orionNumber = "+55 11 98613-1110";
+  const protectedNumber = "••• •• •••••-••••";
+  const realNumber = "+55 11 98613-1110";
   const welcomeMessage = "Oi! Sou o Orion, seu consultor de IA para proteção veicular. Acabei de receber sua compra e estou pronto para te ajudar! Digite 'oi' para começarmos 🚀";
 
   const steps = [
@@ -74,13 +75,16 @@ const FunctionalExample = () => {
                 </div>
                 <div className="flex justify-between">
                   <span>Número:</span>
-                  <span className="font-mono">{orionNumber}</span>
+                  <div className="flex items-center space-x-2">
+                    <span className="font-mono text-[#a0aec0]">{protectedNumber}</span>
+                    <Lock className="w-3 h-3 text-[#ffe066]" />
+                  </div>
                 </div>
               </div>
             </div>
             
             <p className="text-center text-[#a0aec0] text-sm">
-              Salve como qualquer contato normal
+              Número enviado após a compra
             </p>
           </div>
         </div>
@@ -129,19 +133,22 @@ const FunctionalExample = () => {
   ];
 
   useEffect(() => {
-    if (!autoPlay) return;
+    if (!isPlaying) return;
     
     const timer = setInterval(() => {
       setCurrentStep((prev) => (prev + 1) % steps.length);
-    }, 4000);
+    }, 3000); // Mais rápido como um vídeo
 
     return () => clearInterval(timer);
-  }, [autoPlay, steps.length]);
+  }, [isPlaying, steps.length]);
 
-  const copyNumber = () => {
-    navigator.clipboard.writeText(orionNumber);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const togglePlay = () => {
+    setIsPlaying(!isPlaying);
+  };
+
+  const restartVideo = () => {
+    setCurrentStep(0);
+    setIsPlaying(true);
   };
 
   return (
@@ -150,22 +157,29 @@ const FunctionalExample = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
-            Veja como funciona <span className="text-[#00e676]">na prática</span>
+            <span className="text-[#00e676]">Vídeo:</span> Como funciona na prática
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] max-w-2xl mx-auto px-4">
-            Do pagamento até a primeira conversa com o Orion
+            Do pagamento até ter o Orion funcionando no seu WhatsApp
           </p>
         </div>
 
-        {/* Progress Bar */}
-        <div className="flex justify-center mb-8">
-          <div className="flex items-center space-x-2 bg-[#1d2233] rounded-full p-2">
+        {/* Video Controls */}
+        <div className="flex justify-center items-center space-x-4 mb-8">
+          <button
+            onClick={togglePlay}
+            className="bg-[#00e676] hover:bg-[#00d865] text-[#15192c] w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+          >
+            {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-1" />}
+          </button>
+          
+          <div className="flex items-center space-x-2 bg-[#1d2233] rounded-full px-4 py-2">
             {steps.map((_, index) => (
               <React.Fragment key={index}>
                 <button
                   onClick={() => {
                     setCurrentStep(index);
-                    setAutoPlay(false);
+                    setIsPlaying(false);
                   }}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     index === currentStep
@@ -183,61 +197,68 @@ const FunctionalExample = () => {
               </React.Fragment>
             ))}
           </div>
+          
+          <button
+            onClick={restartVideo}
+            className="text-[#21a1ff] hover:text-[#00e676] transition-colors duration-300 text-sm font-semibold"
+          >
+            🔄 Reiniciar
+          </button>
         </div>
 
-        {/* Current Step */}
-        <div className="mb-8">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2 text-[#00e676]">
-              {steps[currentStep].title}
-            </h3>
-            <p className="text-[#a0aec0]">
-              {steps[currentStep].description}
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            {steps[currentStep].content}
-          </div>
-        </div>
-
-        {/* Action Buttons */}
-        <div className="text-center space-y-4">
-          {currentStep === 2 && (
-            <div className="bg-[#1d2233] rounded-2xl p-6 max-w-md mx-auto">
-              <h4 className="font-bold mb-4 text-[#00e676]">
-                Número do Orion para adicionar:
-              </h4>
-              <div className="flex items-center justify-center space-x-3 bg-[#15192c] rounded-xl p-4">
-                <span className="font-mono text-lg">{orionNumber}</span>
-                <button
-                  onClick={copyNumber}
-                  className="bg-[#00e676] hover:bg-[#00d865] text-[#15192c] p-2 rounded-lg transition-all duration-300"
-                >
-                  {copied ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                </button>
+        {/* Video Frame */}
+        <div className="mb-8 relative">
+          {/* Video Frame Border */}
+          <div className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] p-1 rounded-3xl">
+            <div className="bg-[#0f1419] rounded-3xl p-6">
+              {/* Video Header */}
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-700/30">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+                <div className="text-sm text-[#a0aec0] font-mono">
+                  {String(currentStep + 1).padStart(2, '0')}:{String(((currentStep + 1) * 15) % 60).padStart(2, '0')}
+                </div>
+                <div className="flex items-center space-x-2">
+                  {isPlaying ? (
+                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                  ) : (
+                    <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
+                  )}
+                  <span className="text-xs text-[#a0aec0]">
+                    {isPlaying ? 'AO VIVO' : 'PAUSADO'}
+                  </span>
+                </div>
               </div>
-              <p className="text-xs text-[#a0aec0] mt-2">
-                {copied ? 'Copiado!' : 'Clique para copiar'}
-              </p>
-            </div>
-          )}
+              {/* Video Content */}
+              <div className="text-center mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold mb-2 text-[#00e676]">
+                  {steps[currentStep].title}
+                </h3>
+                <p className="text-[#a0aec0]">
+                  {steps[currentStep].description}
+                </p>
+              </div>
 
+              <div className="max-w-2xl mx-auto">
+                {steps[currentStep].content}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              onClick={() => setAutoPlay(!autoPlay)}
-              className="text-[#21a1ff] hover:text-[#00e676] transition-colors duration-300 underline font-semibold"
-            >
-              {autoPlay ? '⏸️ Pausar' : '▶️ Continuar'} demonstração
-            </button>
-            
             <a
               href="https://pay.kiwify.com.br/Kt22F7e"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-6 py-3 rounded-xl font-bold hover:scale-105 transition-all duration-300 flex items-center space-x-2"
+              className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-lg"
             >
-              <span>Quero começar agora</span>
+              <span>🚀 Quero receber o Orion agora</span>
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -247,22 +268,21 @@ const FunctionalExample = () => {
         <div className="mt-12 text-center">
           <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#00e676]/20">
             <h4 className="text-xl font-bold mb-4 text-[#00e676]">
-              ✨ É realmente assim de simples!
+              🔒 Informações protegidas até a compra
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-4">
               <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-[#00e676]" />
-                <span>Sem instalar apps</span>
+                <Lock className="w-4 h-4 text-[#ffe066]" />
+                <span>Número do Orion enviado por e-mail</span>
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <CheckCircle className="w-4 h-4 text-[#00e676]" />
-                <span>Sem configurações</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-[#00e676]" />
-                <span>Funciona imediatamente</span>
+                <span>Acesso imediato após pagamento</span>
               </div>
             </div>
+            <p className="text-xs text-[#a0aec0]">
+              Por segurança, o contato do Orion só é liberado após a confirmação do pagamento
+            </p>
           </div>
         </div>
       </div>
