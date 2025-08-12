@@ -52,8 +52,6 @@ const Differentials = () => {
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] max-w-2xl mx-auto px-4">
             Uma IA especializada em <span className="text-[#21a1ff]">proteção veicular</span> que realmente entende seu negócio.
-            <br />
-            <span className="text-[#00e676] font-semibold">🔥 Mais de 239 consultores já usam o Orion!</span>
           </p>
         </div>
 

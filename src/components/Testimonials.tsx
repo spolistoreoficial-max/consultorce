@@ -86,6 +86,8 @@ const Testimonials = () => {
           </h2>
           <p className="text-lg md:text-xl text-[#a0aec0] px-4">
             Resultados reais de quem já usa o Orion
+            <br />
+            <span className="text-[#00e676] font-semibold">🔥 Mais de 239 consultores já usam o Orion!</span>
           </p>
         </div>
 
