@@ -5,17 +5,11 @@ const HeroSection = () => {
   const scrollToWhatsAppRoll = () => {
     const element = document.getElementById('whatsapp-demo');
     if (element) {
-      const viewportHeight = window.innerHeight;
-      const elementHeight = element.offsetHeight;
-      const navbarHeight = 64; // altura real da navbar
-      
-      // Calcula posição para centralizar o elemento no viewport
-      const elementTop = element.offsetTop;
-      const centerOffset = (viewportHeight - elementHeight) / 2;
-      const scrollPosition = elementTop - centerOffset - navbarHeight;
-      
+      const navbarHeight = 80; // altura da navbar com margem
+      const elementTop = element.offsetTop - navbarHeight;
+
       window.scrollTo({
-        top: Math.max(0, scrollPosition),
+        top: Math.max(0, elementTop),
         behavior: 'smooth'
       });
     }

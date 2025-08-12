@@ -133,13 +133,20 @@ const WhatsAppRoll = () => {
   const scrollChatToBottom = () => {
     if (messagesEndRef.current && messagesContainerRef.current) {
       const container = messagesContainerRef.current;
-      container.scrollTop = container.scrollHeight;
+      container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth'
+      });
     }
   };
 
   useEffect(() => {
-    // Scroll interno apenas dentro do container do chat
-    scrollChatToBottom();
+    // Scroll interno apenas dentro do container do chat, com delay para evitar conflitos
+    const timer = setTimeout(() => {
+      scrollChatToBottom();
+    }, 100);
+    
+    return () => clearTimeout(timer);
   }, [messageIndex, isTyping]);
 
   useEffect(() => {
