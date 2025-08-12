@@ -7,6 +7,10 @@ const UrgencyTimer = () => {
     minutes: 15,
     seconds: 0
   });
+  const [recentPurchases] = React.useState(() => {
+    // Simula compras recentes nas últimas horas
+    return Math.floor(Math.random() * 8) + 12; // Entre 12-19 compras
+  });
 
   React.useEffect(() => {
     const timer = setInterval(() => {
@@ -27,7 +31,12 @@ const UrgencyTimer = () => {
   }, []);
 
   return (
-    <div className="bg-red-500 text-white px-3 py-3 text-center mb-8 animate-pulse w-full">
+    <div className="bg-gradient-to-r from-red-500 to-red-600 text-white px-3 py-4 text-center mb-8 w-full shadow-2xl">
+      <div className="flex items-center justify-center space-x-2 mb-2">
+        <span className="animate-pulse">🔥</span>
+        <span className="font-bold text-sm">{recentPurchases} pessoas compraram nas últimas 6 horas!</span>
+        <span className="animate-pulse">🔥</span>
+      </div>
       <div className="flex items-center justify-center space-x-2 mb-1">
         <Clock className="w-4 h-4" />
         <span className="font-bold text-sm">OFERTA EXPIRA EM:</span>
@@ -145,6 +154,11 @@ const PricingTable = () => {
                 R$ 67,00
               </div>
               <div className="text-xs md:text-sm text-[#a0aec0] font-medium">/mês</div>
+              <div className="bg-[#00e676]/10 rounded-lg p-2 mt-2 border border-[#00e676]/30">
+                <p className="text-xs font-bold text-[#00e676]">
+                  💰 ROI: Fechando apenas 1 venda extra por mês, já pagou!
+                </p>
+              </div>
             </div>
 
             <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
@@ -160,9 +174,9 @@ const PricingTable = () => {
 
             <button
               onClick={() => handleBuyClick('https://pay.kiwify.com.br/bReuhAT')}
-              className="w-full bg-[#00e676] hover:bg-[#00d865] text-[#15192c] py-2.5 md:py-3 rounded-xl font-bold text-sm md:text-base lg:text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl"
+              className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white py-3 md:py-4 rounded-xl font-bold text-sm md:text-base lg:text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl shadow-lg border-2 border-[#ff6b35]/50"
             >
-              Assinar Agora 🚀
+              🔥 Garantir Minha Vaga Agora
             </button>
 
             <p className="text-center text-xs md:text-sm text-[#a0aec0] mt-2 md:mt-3 font-medium">
@@ -204,6 +218,11 @@ const PricingTable = () => {
               <div className="text-white/90 font-bold text-xs md:text-sm bg-white/20 rounded-full px-2 py-1 inline-block backdrop-blur-sm mb-1">
                 Apenas R$ 40,20/mês
               </div>
+              <div className="bg-white/20 rounded-lg p-2 mt-2 backdrop-blur-sm">
+                <p className="text-xs font-bold text-white">
+                  💰 ROI: Com apenas 1 venda extra por mês, economiza R$ 321,60!
+                </p>
+              </div>
             </div>
 
             <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
@@ -219,9 +238,9 @@ const PricingTable = () => {
 
             <button
               onClick={() => handleBuyClick('https://pay.kiwify.com.br/Kt22F7e')}
-              className="w-full bg-[#1d2233] hover:bg-[#15192c] text-white py-2.5 md:py-3 rounded-xl font-bold text-sm md:text-base lg:text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl shadow-lg"
+              className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white py-3 md:py-4 rounded-xl font-bold text-sm md:text-base lg:text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl shadow-lg border-2 border-[#ff6b35]/50"
             >
-              Assinar Agora 🚀
+              🔥 Garantir Minha Vaga Agora
             </button>
 
             <p className="text-center text-xs md:text-sm text-white/90 mt-2 md:mt-3 font-medium">

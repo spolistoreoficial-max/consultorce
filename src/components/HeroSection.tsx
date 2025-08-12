@@ -57,6 +57,8 @@ const HeroSection = () => {
           criar scripts, organizar sua rotina e <strong className="text-[#21a1ff]">bater metas</strong> em proteção veicular.
           <br />
           <span className="text-[#ffe066] font-semibold">✨ Sem instalar nada - funciona direto no seu WhatsApp!</span>
+          <br />
+          <span className="text-[#00e676] font-bold text-xl">🔥 Mais de 500 consultores já usam o Orion!</span>
         </p>
 
         {/* Stats */}
@@ -82,10 +84,10 @@ const HeroSection = () => {
         <div className="flex justify-center perspective-1000">
           <button
             onClick={scrollToWhatsAppRoll}
-            className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 md:px-12 py-4 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#00e676]/25 hover:scale-110 transition-all duration-300 transform hover:translateZ-4 animate-gentle-bounce"
+            className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-8 md:px-12 py-4 md:py-4 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#ff6b35]/25 hover:scale-110 transition-all duration-300 transform hover:translateZ-4 animate-gentle-bounce border-2 border-[#ff6b35]/50"
           >
             <span className="flex items-center space-x-2">
-              <span>Ver Orion em Ação</span>
+              <span>🔥 Ver Orion em Ação</span>
               <span>🚀</span>
             </span>
           </button>

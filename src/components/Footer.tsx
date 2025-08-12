@@ -25,9 +25,9 @@ const Footer = () => {
                 href="https://pay.kiwify.com.br/Kt22F7e"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center"
+                className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center border-2 border-[#ff6b35]/50"
               >
-                🚀 Começar Agora - Plano Anual
+                🔥 Garantir Vaga - Plano Anual
               </a>
               
               <a

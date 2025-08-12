@@ -261,9 +261,9 @@ const FunctionalExample = () => {
                   });
                 }
               }}
-              className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] text-[#15192c] px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-lg"
+              className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-lg shadow-lg border-2 border-[#ff6b35]/50"
             >
-              <span>🚀 Quero receber o Orion agora</span>
+              <span>🔥 Garantir Minha Vaga Agora</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
