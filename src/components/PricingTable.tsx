@@ -91,7 +91,6 @@ const PricingTable = () => {
     "Acesso completo ao Orion IA",
     "Adicionado direto no seu WhatsApp",
     "Scripts para todas objeções",
-    "Sem instalar nada - só adicionar contato",
     "Atualizações automáticas",
     "Garantia de 7 dias"
   ];
@@ -154,11 +153,6 @@ const PricingTable = () => {
                 R$ 67,00
               </div>
               <div className="text-xs md:text-sm text-[#a0aec0] font-medium">/mês</div>
-              <div className="bg-[#00e676]/10 rounded-lg p-2 mt-2 border border-[#00e676]/30">
-                <p className="text-xs font-bold text-[#00e676]">
-                  💰 ROI: Fechando apenas 1 venda extra por mês, já pagou!
-                </p>
-              </div>
             </div>
 
             <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
@@ -217,11 +211,6 @@ const PricingTable = () => {
               <div className="text-xs md:text-sm text-white/90 font-medium mb-1">/ano</div>
               <div className="text-white/90 font-bold text-xs md:text-sm bg-white/20 rounded-full px-2 py-1 inline-block backdrop-blur-sm mb-1">
                 Apenas R$ 40,20/mês
-              </div>
-              <div className="bg-white/20 rounded-lg p-2 mt-2 backdrop-blur-sm">
-                <p className="text-xs font-bold text-white">
-                  💰 ROI: Com apenas 1 venda extra por mês, economiza R$ 321,60!
-                </p>
               </div>
             </div>
 
