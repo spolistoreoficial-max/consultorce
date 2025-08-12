@@ -50,13 +50,10 @@ const Differentials = () => {
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
             Por que <span className="text-[#00e676]">Orion</span> é diferente?
           </h2>
-          <div className="bg-[#00e676]/10 border border-[#00e676]/30 rounded-2xl p-4 mb-6 mx-4 max-w-md mx-auto">
-            <p className="text-[#00e676] font-bold text-lg">
-              🔥 Mais de 500 consultores já usam o Orion!
-            </p>
-          </div>
           <p className="text-lg md:text-xl text-[#a0aec0] max-w-2xl mx-auto px-4">
-            Uma IA especializada em <span className="text-[#21a1ff]">proteção veicular</span> que realmente entende seu negócio
+            Uma IA especializada em <span className="text-[#21a1ff]">proteção veicular</span> que realmente entende seu negócio.
+            <br />
+            <span className="text-[#00e676] font-semibold">🔥 239 consultores já usam o Orion!</span>
           </p>
         </div>
 
