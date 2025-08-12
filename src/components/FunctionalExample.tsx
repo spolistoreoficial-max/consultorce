@@ -248,6 +248,7 @@ const FunctionalExample = () => {
                 <div className="w-full flex items-center justify-center">
                   {steps[currentStep].content}
                 </div>
+              </div>
             </div>
           </div>
         </div>
