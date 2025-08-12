@@ -44,7 +44,10 @@ const FunctionalExample = () => {
               <p><strong>Próximo passo:</strong> Adicionar o Orion no seu WhatsApp</p>
               <div className="bg-[#00e676]/10 p-3 rounded-lg">
                 <p className="font-bold text-[#00e676]">Número do Orion:</p>
-                <p className="font-mono text-lg">{orionNumber}</p>
+                <div className="flex items-center space-x-2">
+                  <p className="font-mono text-lg text-[#a0aec0]">{protectedNumber}</p>
+                  <Lock className="w-4 h-4 text-[#ffe066]" />
+                </div>
               </div>
               <p>É só adicionar como qualquer contato e começar a conversar!</p>
             </div>
