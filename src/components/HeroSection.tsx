@@ -76,7 +76,7 @@ const HeroSection = () => {
         <div className="flex justify-center perspective-1000">
           <button
             onClick={scrollToWhatsAppRoll}
-            className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl text-lg md:text-xl font-bold shadow-2xl hover:shadow-[#ff6b35]/25 hover:scale-105 transition-all duration-200 transform animate-pulse border-2 border-[#ff6b35]/50 relative overflow-hidden"
+            className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl text-lg md:text-xl font-bold shadow-2xl border-2 border-[#ff6b35]/50 relative overflow-hidden animate-float-3d button-3d-hover"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer"></div>
             <span className="flex items-center space-x-2">
