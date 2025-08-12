@@ -280,23 +280,15 @@ const FunctionalExample = () => {
 
         {/* Bottom Info */}
         <div className="mt-12 text-center">
-          <div className="bg-[#1d2233] rounded-2xl p-6 border border-[#00e676]/20">
-            <h4 className="text-xl font-bold mb-4 text-[#00e676]">
-              🔒 Informações protegidas até a compra
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-4">
-              <div className="flex items-center justify-center space-x-2">
-                <Lock className="w-4 h-4 text-[#ffe066]" />
-                <span>Número do Orion enviado por e-mail</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-[#00e676]" />
-                <span>Acesso imediato após pagamento</span>
-              </div>
+          <div className="space-y-3">
+            <div className="flex items-center justify-center space-x-2 text-[#ffe066]">
+              <Lock className="w-4 h-4" />
+              <span className="text-sm font-semibold">Informações protegidas até a compra</span>
             </div>
-            <p className="text-xs text-[#a0aec0]">
-              Por segurança, o contato do Orion só é liberado após a confirmação do pagamento
-            </p>
+            <div className="flex items-center justify-center space-x-2 text-[#00e676]">
+              <CheckCircle className="w-4 h-4" />
+              <span className="text-sm font-semibold">Acesso imediato após pagamento</span>
+            </div>
           </div>
         </div>
       </div>
