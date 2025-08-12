@@ -213,7 +213,7 @@ const FunctionalExample = () => {
         <div className="mb-8 relative">
           {/* Video Frame Border */}
           <div className="bg-gradient-to-r from-[#00e676] to-[#21a1ff] p-1 rounded-3xl">
-            <div className="bg-[#0f1419] rounded-3xl p-6">
+            <div className="bg-[#0f1419] rounded-3xl p-6 h-[600px] flex flex-col">
               {/* Video Header */}
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-700/30">
                 <div className="flex items-center space-x-3">
@@ -235,7 +235,7 @@ const FunctionalExample = () => {
                 </div>
               </div>
               {/* Video Content */}
-              <div className="text-center mb-6">
+              <div className="text-center mb-6 flex-shrink-0">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2 text-[#00e676]">
                   {steps[currentStep].title}
                 </h3>
@@ -244,11 +244,10 @@ const FunctionalExample = () => {
                 </p>
               </div>
 
-              <div className="max-w-2xl mx-auto">
-                <div className="h-[400px] flex items-center justify-center">
+              <div className="max-w-2xl mx-auto flex-1 flex items-center justify-center">
+                <div className="w-full flex items-center justify-center">
                   {steps[currentStep].content}
                 </div>
-              </div>
             </div>
           </div>
         </div>
