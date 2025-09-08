@@ -25,11 +25,11 @@ const Footer = () => {
                 href="https://pay.kiwify.com.br/Kt22F7e"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg w-full sm:w-auto text-center border-2 border-[#ff6b35]/50 relative overflow-hidden group button-3d-hover"
+                className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-lg md:text-xl w-full sm:w-auto text-center border-2 border-[#ff6b35]/50 relative overflow-hidden group button-3d-hover"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-shimmer"></div>
                 <span className="relative z-10">
-                🔥 Obter Acesso - Plano Anual
+                Obter Acesso - Plano Anual
                 </span>
               </a>
               

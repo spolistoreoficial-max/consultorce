@@ -80,7 +80,7 @@ const HeroSection = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer"></div>
             <span className="flex items-center space-x-2">
-              <span>🔥 Ver Orion em Ação</span>
+              <span>Ver Orion em Ação</span>
               <ArrowDown className="w-5 h-5 animate-bounce" />
             </span>
           </button>

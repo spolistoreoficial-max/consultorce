@@ -168,11 +168,11 @@ const PricingTable = () => {
 
             <button
               onClick={() => handleBuyClick('https://pay.kiwify.com.br/bReuhAT')}
-              className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white py-3 md:py-4 rounded-xl font-bold text-sm md:text-base lg:text-lg shadow-lg border-2 border-[#ff6b35]/50 relative overflow-hidden group button-3d-hover"
+              className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white py-3 md:py-4 rounded-xl font-bold text-base md:text-lg lg:text-xl shadow-lg border-2 border-[#ff6b35]/50 relative overflow-hidden group button-3d-hover"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-shimmer"></div>
               <span className="relative z-10">
-              🔥 Obter Acesso Agora
+              Obter Acesso Agora
               </span>
             </button>
 
@@ -230,11 +230,11 @@ const PricingTable = () => {
 
             <button
               onClick={() => handleBuyClick('https://pay.kiwify.com.br/Kt22F7e')}
-              className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white py-3 md:py-4 rounded-xl font-bold text-sm md:text-base lg:text-lg shadow-lg border-2 border-[#ff6b35]/50 relative overflow-hidden group button-3d-hover"
+              className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:from-[#ff5722] hover:to-[#ff9800] text-white py-3 md:py-4 rounded-xl font-bold text-base md:text-lg lg:text-xl shadow-lg border-2 border-[#ff6b35]/50 relative overflow-hidden group button-3d-hover"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-shimmer"></div>
               <span className="relative z-10">
-              🔥 Obter Acesso Agora
+              Obter Acesso Agora
               </span>
             </button>
 
