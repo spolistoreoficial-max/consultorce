@@ -29,7 +29,7 @@ const Footer = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-shimmer"></div>
                 <span className="relative z-10">
-                🔥 Garantir Vaga - Plano Anual
+                🔥 Obter Acesso - Plano Anual
                 </span>
               </a>
               
